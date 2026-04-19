@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Defense of the Agents — Fleet Dashboard</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0d0d0d; color: #c8c8c8; font-family: 'Courier New', monospace; font-size: 13px; padding: 20px; }
+  h1 { color: #7fff7f; font-size: 18px; margin-bottom: 4px; }
+  .subtitle { color: #555; margin-bottom: 20px; }
+  h2 { color: #7fc8ff; font-size: 14px; margin: 20px 0 8px; border-bottom: 1px solid #222; padding-bottom: 4px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 12px; }
+  th { color: #7fff7f; text-align: left; padding: 4px 10px 4px 0; border-bottom: 1px solid #333; }
+  td { padding: 3px 10px 3px 0; border-bottom: 1px solid #1a1a1a; }
+  tr:hover td { background: #111; }
+  .hp-bar { display: inline-block; height: 8px; background: #2a4; border-radius: 2px; vertical-align: middle; margin-right: 4px; }
+  .hp-low { background: #a22; }
+  .hp-mid { background: #aa4; }
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; margin-bottom: 12px; }
+  .stat-box { background: #111; border: 1px solid #222; padding: 10px; border-radius: 3px; }
+  .stat-label { color: #555; font-size: 11px; }
+  .stat-value { color: #fff; font-size: 20px; margin-top: 2px; }
+  .report { background: #0a0a0a; border: 1px solid #222; padding: 12px; white-space: pre-wrap; color: #999; font-size: 12px; max-height: 300px; overflow-y: auto; }
+  .error { color: #f55; font-style: italic; }
+  .loading { color: #555; }
+  a { color: #7fc8ff; }
+  .tag { display: inline-block; background: #1a2a1a; color: #7fff7f; border-radius: 2px; padding: 1px 5px; font-size: 11px; }
+  .tag-dead { background: #2a1a1a; color: #f55; }
+  footer { margin-top: 24px; color: #333; font-size: 11px; }
+</style>
+</head>
+<body>
+<h1>Defense of the Agents — Fleet Dashboard</h1>
+<div class="subtitle" id="updated">Loading...</div>
+
+<h2>Fleet Status</h2>
+<table id="fleet-table">
+  <thead><tr>
+    <th>Bot</th><th>Class</th><th>Lane</th><th>HP</th><th>Level</th><th>Last Action</th><th>Last Seen</th>
+  </tr></thead>
+  <tbody id="fleet-body"><tr><td colspan="7" class="loading">Loading fleet data...</td></tr></tbody>
+</table>
+
+<h2>Summary (last 24h)</h2>
+<div class="stats-grid" id="stats-grid">
+  <div class="stat-box"><div class="stat-label">Games</div><div class="stat-value" id="s-games">—</div></div>
+  <div class="stat-box"><div class="stat-label">Deaths</div><div class="stat-value" id="s-deaths">—</div></div>
+  <div class="stat-box"><div class="stat-label">Recalls</div><div class="stat-value" id="s-recalls">—</div></div>
+  <div class="stat-box"><div class="stat-label">Avg Level</div><div class="stat-value" id="s-level">—</div></div>
+  <div class="stat-box"><div class="stat-label">Lane Switches</div><div class="stat-value" id="s-switches">—</div></div>
+</div>
+
+<h2>Latest Report</h2>
+<div class="report" id="report-text">Loading report...</div>
+
+<footer>
+  Auto-refreshes every 30s. &nbsp;|&nbsp;
+  <a href="https://github.com/gitan0/finaldefense" target="_blank">Private strategy repo</a>
+</footer>
+
+<script>
+function hpColor(hp) {
+  if (hp >= 0.6) return '';
+  if (hp >= 0.3) return 'hp-mid';
+  return 'hp-low';
+}
+
+function ago(ts) {
+  if (!ts) return '—';
+  const diff = Math.floor((Date.now() - new Date(ts)) / 1000);
+  if (diff < 60) return diff + 's ago';
+  if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+  return Math.floor(diff / 3600) + 'h ago';
+}
+
+function render(data) {
+  document.getElementById('updated').textContent =
+    'Last updated: ' + (data.generated_at ? new Date(data.generated_at).toUTCString() : '—');
+
+  const bots = data.bots || [];
+  const tbody = document.getElementById('fleet-body');
+  if (!bots.length) {
+    tbody.innerHTML = '<tr><td colspan="7" class="loading">No bot data available.</td></tr>';
+  } else {
+    tbody.innerHTML = bots.map(b => {
+      const hp = b.hp_pct != null ? b.hp_pct : null;
+      const hpBar = hp != null
+        ? `<span class="hp-bar ${hpColor(hp)}" style="width:${Math.round(hp*60)}px"></span>${Math.round(hp*100)}%`
+        : '—';
+      const aliveTag = b.alive === false
+        ? '<span class="tag tag-dead">dead</span>'
+        : b.alive === true ? '<span class="tag">alive</span>' : '';
+      return `<tr>
+        <td><b>${b.name}</b> ${aliveTag}</td>
+        <td>${b.hero_class || '—'}</td>
+        <td>${b.lane || '—'}</td>
+        <td>${hpBar}</td>
+        <td>${b.level != null ? b.level : '—'}</td>
+        <td style="color:#777;font-size:11px">${(b.last_action || '—').slice(0, 40)}</td>
+        <td style="color:#555">${ago(b.last_seen)}</td>
+      </tr>`;
+    }).join('');
+  }
+
+  const s = data.summary || {};
+  document.getElementById('s-games').textContent = s.games_24h ?? '—';
+  document.getElementById('s-deaths').textContent = s.deaths ?? '—';
+  document.getElementById('s-recalls').textContent = s.recalls ?? '—';
+  document.getElementById('s-level').textContent = s.avg_level != null ? s.avg_level.toFixed(1) : '—';
+  document.getElementById('s-switches').textContent = s.lane_switches ?? '—';
+
+  document.getElementById('report-text').textContent = data.latest_report || '(no report yet)';
+}
+
+async function refresh() {
+  try {
+    const r = await fetch('./data.json?_=' + Date.now());
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    render(await r.json());
+  } catch (e) {
+    document.getElementById('fleet-body').innerHTML =
+      '<tr><td colspan="7" class="error">Failed to load data: ' + e.message + '</td></tr>';
+    document.getElementById('report-text').textContent = 'Failed to load: ' + e.message;
+  }
+}
+
+refresh();
+setInterval(refresh, 30000);
+</script>
+</body>
+</html>
