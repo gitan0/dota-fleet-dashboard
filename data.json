@@ -1,41 +1,41 @@
 {
-  "generated_at": "2026-04-19T08:10:02.220888+00:00",
+  "generated_at": "2026-04-19T08:15:02.272494+00:00",
   "bots": [
     {
       "name": "Aerith",
-      "hp_pct": 1.0,
-      "lane": "top",
-      "level": 7,
-      "alive": true,
+      "hp_pct": null,
+      "lane": "bot",
+      "level": 10,
+      "alive": false,
       "hero_class": "mage",
-      "last_action": "hold_top:best_score_15",
-      "last_seen": "2026-04-19T08:09:31.526098+00:00",
+      "last_action": "dead_waiting_respawn",
+      "last_seen": "2026-04-19T08:14:34.463188+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
     },
     {
       "name": "Barret",
-      "hp_pct": null,
+      "hp_pct": 1.0,
       "lane": "bot",
-      "level": 8,
-      "alive": false,
+      "level": 12,
+      "alive": true,
       "hero_class": "ranged",
-      "last_action": "dead_waiting_respawn",
-      "last_seen": "2026-04-19T08:09:31.594031+00:00",
+      "last_action": "ping:base",
+      "last_seen": "2026-04-19T08:14:32.674044+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
     },
     {
       "name": "Cloud",
-      "hp_pct": null,
+      "hp_pct": 1.0,
       "lane": "bot",
-      "level": 9,
-      "alive": false,
+      "level": 11,
+      "alive": true,
       "hero_class": "mage",
-      "last_action": "dead_waiting_respawn",
-      "last_seen": "2026-04-19T08:09:33.302413+00:00",
+      "last_action": "ping:bot",
+      "last_seen": "2026-04-19T08:14:32.857421+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
@@ -43,12 +43,12 @@
     {
       "name": "Sephiroth",
       "hp_pct": null,
-      "lane": "top",
-      "level": 8,
+      "lane": "bot",
+      "level": 11,
       "alive": false,
       "hero_class": "mage",
       "last_action": "dead_waiting_respawn",
-      "last_seen": "2026-04-19T08:09:33.634279+00:00",
+      "last_seen": "2026-04-19T08:14:34.724291+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
@@ -59,10 +59,10 @@
     "wins": 38,
     "losses": 51,
     "win_pct": 43,
-    "deaths": 718,
-    "deaths_per_game": 13.3,
-    "recalls": 649,
-    "lane_switches": 860,
+    "deaths": 725,
+    "deaths_per_game": 13.4,
+    "recalls": 659,
+    "lane_switches": 861,
     "avg_level": 7.6
   },
   "latest_report": "# Fleet Analysis Report \u2014 2026-04-19 05:02 UTC\n\n## Red Flags\n\n  - **Aerith**: mage 100% of games \u2192 PLACEMENT bias\n  - **Barret**: ranged 100% of games \u2192 PLACEMENT bias\n  - **Cloud**: mage 100% of games \u2192 PLACEMENT bias\n  - **Sephiroth**: mage 100% of games \u2192 PLACEMENT bias\n\n## Per-Bot Analysis\n\n### Aerith\n- Ticks logged: 1307\n- Games (deploys): 37\n- Deaths: 201\n- Recalls: 82\n- Lane switches: 180 (4.9/game)\n- Faction distribution: mage:37\n- Pings: mid:162, base:75, top:72, bot:61\n- Avg HP when alive: 87.0%\n- Level distribution: L8:2, L9:3, L13:12, L14:10, L15:5, L17:5\n- Ability picks (in order): fortitude, fortitude, tornado, fireball, tornado, fortitude, tornado, fortitude, fortitude, tornado, fortitude, fortitude, tornado, tornado, tornado, tornado, tornado, fortitude, tornado, fortitude, tornado, tornado, tornado, fortitude, tornado, fortitude, tornado, fortitude, fortitude, tornado, tornado, tornado, tornado, tornado, fortitude, fortitude, tornado, tornado, tornado, fortitude, fortitude, fireball, tornado, fortitude, fireball, fortitude, fireball, tornado, fortitude, tornado, tornado, fireball, fireball, tornado, fortitude, tornado, tornado, fireball, fortitude, tornado, fortitude, fortitude, tornado, fireball, fireball, fortitude, fireball, fortitude, fireball, fireball, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fireball, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, tornado, fortitude, tornado, fortitude, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fireball, fortitude, fortitude, fireball, fireball, fortitude, fireball, fireball, fireball, fireball, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, fortitude, tornado, fireball, tornado, fireball, fireball, fortitude, fireball, fortitude, raise_skeleton, fortitude, tornado, fortitude, fortitude, tornado, fortitude, fireball, fortitude, tornado, tornado, fireball, fortitude, fireball, fireball, fireball, raise_skeleton, fortitude, tornado, tornado, fireball, fortitude, fireball, tornado, fortitude, fireball, fortitude, raise_skeleton, tornado, fortitude, tornado, fortitude, fortitude, tornado, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, fireball, tornado, tornado, tornado, tornado, tornado, tornado, tornado, raise_skeleton, tornado, tornado, fireball, tornado, tornado, tornado, raise_skeleton, tornado, tornado, tornado, tornado, tornado, fireball, tornado, fireball, tornado, fireball, fireball, tornado, fireball, fireball, tornado, tornado, tornado, raise_skeleton, tornado, tornado, tornado, tornado, tornado, tornado, tornado, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, tornado, raise_skeleton, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, fireball, tornado, tornado, fireball, fireball, raise_skeleton\n\n### Barret\n- Ticks logged: 1319\n- Games (deploys): 37\n- Deaths: 190\n- Recalls: 78\n- Lane switches: 178 (4.8/game)\n- Faction distribution: ranged:37\n- Pings: mid:141, base:89, top:78, bot:72\n- Avg HP when alive: 87.9%\n- Level distribution: L8:2, L9:4, L13:1, L14:4, L15:14, L16:8, L17:4\n- Ability picks (in order): critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fury, critical_strike, critical_strike, fortitude, critical_strike, fury, critical_strike, fortitude, critical_strike, fury, critical_strike, fortitude, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fury, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fury, critical_strike, critical_strike, critical_strike, fury, fury, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fury, critical_strike, fury, fortitude, fortitude, critical_strike, fury, fortitude, critical_strike, fury, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, fury, fortitude, fortitude, fury, fortitude, fortitude, fortitude, fortitude, critical_strike, fury, critical_strike, fortitude, fury, fortitude, critical_strike, fury, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fury, fortitude, critical_strike, fury, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fury, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fortitude\n\n### Cloud\n- Ticks logged: 1325\n- Games (deploys): 37\n- Deaths: 225\n- Recalls: 67\n- Lane switches: 159 (4.3/game)\n- Faction distribution: mage:37\n- Pings: mid:145, bot:78, top:76, base:56\n- Avg HP when alive: 87.7%\n- Level distribution: L12:7, L13:7, L14:12, L15:4, L16:5, L17:2\n- Ability picks (in order): tornado, fireball, tornado, tornado, tornado, fortitude, tornado, tornado, tornado, fireball, tornado, fireball, tornado, fortitude, tornado, tornado, fortitude, fireball, tornado, fortitude, tornado, tornado, fortitude, tornado, fortitude, tornado, fortitude, tornado, tornado, fortitude, tornado, fortitude, tornado, tornado, tornado, fortitude, fortitude, fortitude, fireball, fortitude, fireball, tornado, fortitude, tornado, tornado, fortitude, fireball, fortitude, fortitude, tornado, fireball, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, fortitude, fireball, tornado, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fortitude, tornado, fireball, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fireball, raise_skeleton, fireball, fireball, raise_skeleton, fireball, fortitude, tornado, fortitude, tornado, fireball, fireball, fortitude, fireball, fireball, fireball, fireball, fireball, fireball, fireball, fireball, fireball, fireball, fireball, tornado, fireball, fortitude, fireball, raise_skeleton, fortitude, fireball, tornado, fortitude, fireball, fireball, fireball, fortitude, tornado, tornado, tornado, fireball, tornado, tornado, tornado, fireball, tornado, tornado, fireball, tornado, tornado, tornado, fireball, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, fireball, tornado, tornado, tornado, tornado, tornado, tornado, tornado, fireball, tornado, fireball, fireball, tornado, fireball, tornado, tornado, fireball, fireball, tornado, tornado, fireball, fortitude, tornado, fortitude, fireball, fireball, fireball, tornado, fireball, tornado, fireball, tornado, tornado, tornado, tornado, tornado, tornado, tornado, raise_skeleton, tornado, raise_skeleton, raise_skeleton, fireball, raise_skeleton, fireball, tornado, tornado, raise_skeleton, raise_skeleton, raise_skeleton\n\n### Sephiroth\n- Ticks logged: 1322\n- Games (deploys): 37\n- Deaths: 221\n- Recalls: 65\n- Lane switches: 169 (4.6/game)\n- Faction distribution: mage:37\n- Pings: mid:154, bot:71, top:68, base:65\n- Avg HP when alive: 89.1%\n- Level distribution: L11:2, L12:4, L13:9, L14:10, L15:5, L17:7\n- Ability picks (in order): tornado, fortitude, fortitude, fortitude, tornado, tornado, tornado, tornado, fortitude, fortitude, tornado, tornado, tornado, fortitude, tornado, tornado, fortitude, tornado, fortitude, tornado, fireball, tornado, tornado, fortitude, fireball, tornado, tornado, tornado, tornado, fortitude, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, fortitude, tornado, fireball, tornado, tornado, tornado, tornado, fireball, tornado, tornado, tornado, tornado, fortitude, fireball, fireball, fortitude, fireball, tornado, fireball, fireball, fireball, tornado, fireball, fireball, tornado, fireball, fireball, fireball, fireball, fireball, fortitude, tornado, fortitude, tornado, fireball, fortitude, fortitude, fortitude, tornado, tornado, tornado, tornado, fireball, fortitude, fortitude, tornado, fortitude, tornado, fortitude, fortitude, fireball, tornado, fortitude, tornado, tornado, fireball, fortitude, fortitude, tornado, fireball, fireball, raise_skeleton, fireball, raise_skeleton, tornado, fortitude, fireball, fireball, fortitude, tornado, fireball, fireball, fireball, tornado, fireball, tornado, fortitude, fireball, tornado, fireball, fireball, tornado, raise_skeleton, raise_skeleton, raise_skeleton, fireball, fireball, tornado, tornado, tornado, fireball, fortitude, raise_skeleton, tornado, tornado, raise_skeleton, fireball, fireball, fireball, fireball, fortitude, fortitude, tornado, fireball, tornado, fireball, fireball, fireball, raise_skeleton, tornado, fireball, fireball, raise_skeleton, tornado, fireball, tornado, fireball, fireball, fireball, fireball, tornado, fireball, fireball, fireball, tornado, tornado, tornado, fireball, raise_skeleton, raise_skeleton, tornado, tornado, tornado, tornado, fireball, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, fireball, fireball, fireball, tornado, fireball, fireball, fireball, fireball, tornado, tornado, tornado, tornado, raise_skeleton, tornado, raise_skeleton, tornado, tornado, fireball, tornado, fireball, tornado, fireball, tornado, tornado, fury, fury\n\n## Fleet-Wide\n\n- Lane stacking incidents (3+ bots same lane same tick): 13\n- Faction co-occurrence across games:\n  - mage + mage: 111 games\n  - mage + ranged: 111 games\n\n## Decision Reasoning Summary\n\nTop 10 most common reasoning strings (fleet-wide):\n  - `dead_waiting_respawn`: 1127\n  - `respawn_rotation`: 244\n  - `low_hp_recall`: 180\n  - `hold_top:best_score_-10`: 149\n  - `first_deploy`: 148\n  - `hold_top:best_score_5`: 147\n  - `hold_top:best_score_-5`: 145\n  - `hold_bot:best_score_5`: 141\n  - `hold_bot:best_score_-5`: 137\n  - `hold_mid:best_score_-10`: 128\n",
@@ -70,32 +70,32 @@
     {
       "name": "lmeow",
       "max_level": 21,
-      "avg_level": 10.2,
-      "deaths": 32,
-      "avg_hp": 0.871,
+      "avg_level": 10.3,
+      "deaths": 33,
+      "avg_hp": 0.872,
       "lane": "mid",
       "faction": "human",
-      "ticks_observed": 223
+      "ticks_observed": 228
     },
     {
       "name": "exZo_horde",
       "max_level": 21,
-      "avg_level": 10.2,
-      "deaths": 24,
-      "avg_hp": 0.875,
+      "avg_level": 10.3,
+      "deaths": 25,
+      "avg_hp": 0.872,
       "lane": "mid",
       "faction": "human",
-      "ticks_observed": 122
+      "ticks_observed": 127
     },
     {
       "name": "Hecate",
       "max_level": 20,
       "avg_level": 9.5,
-      "deaths": 34,
-      "avg_hp": 0.906,
-      "lane": "mid",
+      "deaths": 35,
+      "avg_hp": 0.907,
+      "lane": "bot",
       "faction": "orc",
-      "ticks_observed": 223
+      "ticks_observed": 228
     },
     {
       "name": "ExH_Alpha",
@@ -110,12 +110,12 @@
     {
       "name": "bryans-droid",
       "max_level": 19,
-      "avg_level": 7.9,
+      "avg_level": 8.0,
       "deaths": 27,
-      "avg_hp": 0.904,
+      "avg_hp": 0.907,
       "lane": "mid",
       "faction": "orc",
-      "ticks_observed": 174
+      "ticks_observed": 179
     },
     {
       "name": "ExH_Beta",
@@ -141,11 +141,11 @@
       "name": "0xyz",
       "max_level": 18,
       "avg_level": 8.7,
-      "deaths": 39,
-      "avg_hp": 0.829,
+      "deaths": 40,
+      "avg_hp": 0.834,
       "lane": "mid",
       "faction": "human",
-      "ticks_observed": 218
+      "ticks_observed": 223
     },
     {
       "name": "exZo_horde2",
@@ -155,17 +155,17 @@
       "avg_hp": 0.887,
       "lane": "top",
       "faction": "orc",
-      "ticks_observed": 121
+      "ticks_observed": 126
     },
     {
       "name": "MoltStrike",
       "max_level": 17,
       "avg_level": 7.2,
-      "deaths": 36,
-      "avg_hp": 0.89,
-      "lane": "bot",
+      "deaths": 37,
+      "avg_hp": 0.887,
+      "lane": "top",
       "faction": "orc",
-      "ticks_observed": 223
+      "ticks_observed": 228
     }
   ]
 }
