@@ -54,7 +54,10 @@
 <h2>Summary (last 24h)</h2>
 <div class="stats-grid">
   <div class="stat-box"><div class="stat-label">Games</div><div class="stat-value" id="s-games">—</div></div>
+  <div class="stat-box"><div class="stat-label">Wins</div><div class="stat-value" id="s-wins">—</div></div>
+  <div class="stat-box"><div class="stat-label">Win %</div><div class="stat-value" id="s-winpct">—</div></div>
   <div class="stat-box"><div class="stat-label">Deaths</div><div class="stat-value" id="s-deaths">—</div></div>
+  <div class="stat-box"><div class="stat-label">Deaths/Game</div><div class="stat-value" id="s-dpg">—</div></div>
   <div class="stat-box"><div class="stat-label">Recalls</div><div class="stat-value" id="s-recalls">—</div></div>
   <div class="stat-box"><div class="stat-label">Avg Level</div><div class="stat-value" id="s-level">—</div></div>
   <div class="stat-box"><div class="stat-label">Lane Switches</div><div class="stat-value" id="s-switches">—</div></div>
@@ -131,7 +134,10 @@ function render(data) {
 
   const s = data.summary || {};
   document.getElementById('s-games').textContent = s.games_24h ?? '—';
+  document.getElementById('s-wins').textContent = s.wins != null ? `${s.wins}W / ${s.losses}L` : '—';
+  document.getElementById('s-winpct').textContent = s.win_pct != null ? s.win_pct + '%' : '—';
   document.getElementById('s-deaths').textContent = s.deaths ?? '—';
+  document.getElementById('s-dpg').textContent = s.deaths_per_game ?? '—';
   document.getElementById('s-recalls').textContent = s.recalls ?? '—';
   document.getElementById('s-level').textContent = s.avg_level != null ? s.avg_level.toFixed(1) : '—';
   document.getElementById('s-switches').textContent = s.lane_switches ?? '—';
