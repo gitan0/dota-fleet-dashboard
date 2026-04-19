@@ -31,11 +31,17 @@
   .tag-idle     { background: #1a1a2a; color: #7fc8ff; }
   .tag-offline  { background: #2a1a1a; color: #f55; }
   footer { margin-top: 24px; color: #333; font-size: 11px; }
+  .refresh-btn { background: #1a2a1a; color: #7fff7f; border: 1px solid #3a5a3a; padding: 5px 14px; font-family: inherit; font-size: 12px; cursor: pointer; border-radius: 3px; margin-left: 12px; }
+  .refresh-btn:hover { background: #2a3a2a; }
+  .refresh-btn:active { background: #0d1a0d; }
 </style>
 </head>
 <body>
 <h1>Defense of the Agents — Fleet Dashboard</h1>
-<div class="subtitle" id="updated">Loading...</div>
+<div class="subtitle">
+  <span id="updated">Loading...</span>
+  <button class="refresh-btn" onclick="manualRefresh()">↻ Refresh</button>
+</div>
 
 <h2>Fleet Status</h2>
 <table id="fleet-table">
@@ -77,12 +83,14 @@ function ago(ts) {
   return Math.floor(diff / 3600) + 'h ago';
 }
 
-function statusTag(bot) {
+function statusTag(bot, generatedAt) {
   const ts = bot.last_seen;
   if (!ts) return '<span class="tag tag-offline">offline</span>';
-  const age = (Date.now() - new Date(ts)) / 1000;
+  // Compare last_seen against when data.json was built, not browser clock
+  const ref = generatedAt ? new Date(generatedAt) : new Date();
+  const age = (ref - new Date(ts)) / 1000;
   if (age < 30)  return '<span class="tag tag-deployed">deployed</span>';
-  if (age < 300) return '<span class="tag tag-idle">idle</span>';
+  if (age < 120) return '<span class="tag tag-idle">idle</span>';
   return '<span class="tag tag-offline">offline</span>';
 }
 
@@ -110,7 +118,7 @@ function render(data) {
         : '—';
       return `<tr>
         <td style="width:52px">${portrait(b.name)}</td>
-        <td><b>${b.name}</b><br>${statusTag(b)}</td>
+        <td><b>${b.name}</b><br>${statusTag(b, data.generated_at)}</td>
         <td>${b.hero_class || '—'}</td>
         <td>${b.lane || '—'}</td>
         <td>${hpBar}</td>
@@ -141,6 +149,16 @@ async function refresh() {
       '<tr><td colspan="8" class="error">Failed to load data: ' + e.message + '</td></tr>';
     document.getElementById('report-text').textContent = 'Failed to load: ' + e.message;
   }
+}
+
+function manualRefresh() {
+  const btn = document.querySelector('.refresh-btn');
+  btn.textContent = '↻ Refreshing...';
+  btn.disabled = true;
+  refresh().finally(() => {
+    btn.textContent = '↻ Refresh';
+    btn.disabled = false;
+  });
 }
 
 refresh();
