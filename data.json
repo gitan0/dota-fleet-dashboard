@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-04-19T00:23:36.659830+00:00",
+  "bots": [
+    {
+      "name": "Aerith",
+      "hp_pct": null,
+      "lane": "mid",
+      "level": 9,
+      "alive": false,
+      "hero_class": "mage",
+      "last_action": "dead_waiting_respawn",
+      "last_seen": "2026-04-19T00:09:03.891170+00:00"
+    },
+    {
+      "name": "Barret",
+      "hp_pct": null,
+      "lane": "mid",
+      "level": 9,
+      "alive": false,
+      "hero_class": "ranged",
+      "last_action": "dead_waiting_respawn",
+      "last_seen": "2026-04-19T00:09:50.366510+00:00"
+    },
+    {
+      "name": "Cloud",
+      "hp_pct": null,
+      "lane": "mid",
+      "level": 14,
+      "alive": false,
+      "hero_class": "mage",
+      "last_action": "dead_waiting_respawn",
+      "last_seen": "2026-04-19T00:09:03.141308+00:00"
+    },
+    {
+      "name": "Sephiroth",
+      "hp_pct": null,
+      "lane": "mid",
+      "level": 13,
+      "alive": false,
+      "hero_class": "mage",
+      "last_action": "dead_waiting_respawn",
+      "last_seen": "2026-04-19T00:09:50.310323+00:00"
+    }
+  ],
+  "summary": {
+    "games_24h": 12,
+    "deaths": 49,
+    "recalls": 0,
+    "lane_switches": 57,
+    "avg_level": 5.7
+  },
+  "latest_report": "# Fleet Analysis Report\n\n## Red Flags\n\n  - **Aerith**: recall_count = 0 \u2192 BUG (recall never triggered)\n  - **Aerith**: 5.3 lane switches/game \u2192 HIGH\n  - **Aerith**: mage 100% of games \u2192 PLACEMENT bias\n  - **Barret**: recall_count = 0 \u2192 BUG (recall never triggered)\n  - **Barret**: 5.7 lane switches/game \u2192 HIGH\n  - **Barret**: ranged 100% of games \u2192 PLACEMENT bias\n  - **Cloud**: recall_count = 0 \u2192 BUG (recall never triggered)\n  - **Cloud**: mage 100% of games \u2192 PLACEMENT bias\n  - **Sephiroth**: recall_count = 0 \u2192 BUG (recall never triggered)\n  - **Sephiroth**: mage 100% of games \u2192 PLACEMENT bias\n  - **Sephiroth**: unexpected reasoning `dragon_kill` (1x)\n\n## Per-Bot Analysis\n\n### Aerith\n- Ticks logged: 91\n- Games (deploys): 3\n- Deaths: 14\n- Recalls: 0\n- Lane switches: 16 (5.3/game)\n- Faction distribution: mage:3\n- Pings: mid:13, top:10, base:3, bot:2\n- Avg HP when alive: 88.2%\n- Level distribution: L9:3\n- Ability picks (in order): tornado, tornado, fortitude, fireball, fireball, fortitude, tornado, tornado, tornado, tornado, fireball, fireball, fireball\n\n### Barret\n- Ticks logged: 89\n- Games (deploys): 3\n- Deaths: 8\n- Recalls: 0\n- Lane switches: 17 (5.7/game)\n- Faction distribution: ranged:3\n- Pings: mid:13, top:5, bot:4, base:4\n- Avg HP when alive: 78.8%\n- Level distribution: L9:3\n- Ability picks (in order): critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude\n\n### Cloud\n- Ticks logged: 98\n- Games (deploys): 3\n- Deaths: 16\n- Recalls: 0\n- Lane switches: 11 (3.7/game)\n- Faction distribution: mage:3\n- Pings: mid:12, bot:4, base:3, top:1\n- Avg HP when alive: 81.3%\n- Level distribution: L14:3\n- Ability picks (in order): fireball, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, tornado, fortitude, fortitude, fireball, fireball, raise_skeleton\n\n### Sephiroth\n- Ticks logged: 85\n- Games (deploys): 3\n- Deaths: 11\n- Recalls: 0\n- Lane switches: 13 (4.3/game)\n- Faction distribution: mage:3\n- Pings: mid:11, bot:5, base:4, top:1\n- Avg HP when alive: 84.2%\n- Level distribution: L12:2, L13:1\n- Ability picks (in order): tornado, tornado, tornado, fortitude, tornado, tornado, fortitude, fortitude, fireball, tornado, tornado, fireball, fireball, fireball, fireball, fireball, tornado\n\n## Fleet-Wide\n\n- Lane stacking incidents (3+ bots same lane same tick): 1\n- Faction co-occurrence across games:\n  - mage + mage: 9 games\n  - mage + ranged: 9 games\n\n## Decision Reasoning Summary\n\nTop 10 most common reasoning strings (fleet-wide):\n  - `dead_waiting_respawn`: 101\n  - `respawn_rotation`: 21\n  - `hold_mid:best_score_15`: 18\n  - `hold_top:best_score_5`: 15"
+}
