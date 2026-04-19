@@ -1,171 +1,171 @@
 {
-  "generated_at": "2026-04-19T04:30:02.540444+00:00",
+  "generated_at": "2026-04-19T04:35:02.308903+00:00",
   "bots": [
     {
       "name": "Aerith",
-      "hp_pct": 0.658,
-      "lane": "top",
-      "level": 12,
+      "hp_pct": 1.0,
+      "lane": "bot",
+      "level": 3,
       "alive": true,
       "hero_class": "mage",
-      "last_action": "hold_top:best_score_-10",
-      "last_seen": "2026-04-19T04:29:51.698776+00:00",
+      "last_action": "Respawn to mid",
+      "last_seen": "2026-04-19T04:34:55.453740+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
     },
     {
       "name": "Barret",
-      "hp_pct": 0.493,
+      "hp_pct": 1.0,
       "lane": "top",
-      "level": 13,
+      "level": 5,
       "alive": true,
       "hero_class": "ranged",
-      "last_action": "Recall in enemy territory HP 49%",
-      "last_seen": "2026-04-19T04:29:54.736735+00:00",
+      "last_action": "ping:top",
+      "last_seen": "2026-04-19T04:34:56.132488+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
     },
     {
       "name": "Cloud",
-      "hp_pct": 1.0,
-      "lane": "bot",
-      "level": 13,
-      "alive": true,
+      "hp_pct": null,
+      "lane": "mid",
+      "level": 4,
+      "alive": false,
       "hero_class": "mage",
-      "last_action": "hold_bot:best_score_5",
-      "last_seen": "2026-04-19T04:29:56.332720+00:00",
+      "last_action": "dead_waiting_respawn",
+      "last_seen": "2026-04-19T04:34:54.377960+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
     },
     {
       "name": "Sephiroth",
-      "hp_pct": 0.755,
-      "lane": "bot",
-      "level": 12,
+      "hp_pct": 0.861,
+      "lane": "top",
+      "level": 6,
       "alive": true,
       "hero_class": "mage",
-      "last_action": "hold_bot:best_score_0",
-      "last_seen": "2026-04-19T04:29:51.906108+00:00",
+      "last_action": "ping:top",
+      "last_seen": "2026-04-19T04:34:56.549238+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
     }
   ],
   "summary": {
-    "games_24h": 32,
+    "games_24h": 34,
     "wins": 26,
     "losses": 27,
     "win_pct": 49,
-    "deaths": 359,
-    "deaths_per_game": 11.2,
-    "recalls": 258,
-    "lane_switches": 647,
-    "avg_level": 7.3
+    "deaths": 363,
+    "deaths_per_game": 10.7,
+    "recalls": 265,
+    "lane_switches": 650,
+    "avg_level": 7.2
   },
   "latest_report": "# Fleet Analysis Report\n\n## Red Flags\n\n  - **Aerith**: 5.8 lane switches/game \u2192 HIGH\n  - **Aerith**: mage 100% of games \u2192 PLACEMENT bias\n  - **Aerith**: unexpected reasoning `low_hp_recall` (2x)\n  - **Aerith**: unexpected reasoning `dragon_kill` (1x)\n  - **Barret**: 6.2 lane switches/game \u2192 HIGH\n  - **Barret**: ranged 100% of games \u2192 PLACEMENT bias\n  - **Barret**: unexpected reasoning `low_hp_recall` (1x)\n  - **Cloud**: recall_count = 0 \u2192 BUG (recall never triggered)\n  - **Cloud**: 6.2 lane switches/game \u2192 HIGH\n  - **Cloud**: mage 100% of games \u2192 PLACEMENT bias\n  - **Sephiroth**: 5.2 lane switches/game \u2192 HIGH\n  - **Sephiroth**: mage 100% of games \u2192 PLACEMENT bias\n  - **Sephiroth**: unexpected reasoning `low_hp_recall` (1x)\n  - **Sephiroth**: unexpected reasoning `dragon_kill` (1x)\n\n## Per-Bot Analysis\n\n### Aerith\n- Ticks logged: 140\n- Games (deploys): 4\n- Deaths: 20\n- Recalls: 2\n- Lane switches: 23 (5.8/game)\n- Faction distribution: mage:4\n- Pings: mid:16, top:14, base:6, bot:2\n- Avg HP when alive: 85.0%\n- Level distribution: L8:1, L9:3\n- Ability picks (in order): tornado, tornado, fortitude, fireball, fireball, fireball, fireball, fortitude, fortitude, fortitude, tornado, tornado, tornado, tornado, raise_skeleton, fireball, fireball, fireball\n\n### Barret\n- Ticks logged: 136\n- Games (deploys): 4\n- Deaths: 17\n- Recalls: 1\n- Lane switches: 25 (6.2/game)\n- Faction distribution: ranged:4\n- Pings: mid:15, top:10, base:7, bot:5\n- Avg HP when alive: 81.4%\n- Level distribution: L9:4\n- Ability picks (in order): critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fury, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude\n\n### Cloud\n- Ticks logged: 147\n- Games (deploys): 4\n- Deaths: 23\n- Recalls: 0\n- Lane switches: 25 (6.2/game)\n- Faction distribution: mage:4\n- Pings: mid:20, bot:7, base:3, top:2\n- Avg HP when alive: 82.8%\n- Level distribution: L14:4\n- Ability picks (in order): fireball, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, tornado, tornado, fireball, fortitude, fortitude, fireball, fireball, raise_skeleton\n\n### Sephiroth\n- Ticks logged: 132\n- Games (deploys): 4\n- Deaths: 14\n- Recalls: 1\n- Lane switches: 21 (5.2/game)\n- Faction distribution: mage:4\n- Pings: mid:17, bot:7, top:4, base:4\n- Avg HP when alive: 86.2%\n- Level distribution: L12:3, L13:1\n- Ability picks (in order): fortitude, tornado, tornado, fortitude, tornado, fortitude, tornado, tornado, fortitude, fortitude, fireball, fireball, tornado, tornado, fireball, fireball, fireball, fireball, fireball, tornado\n\n## Fleet-Wide\n\n- Lane stacking incidents (3+ bots same lane same tick): 1\n- Faction co-occurrence across games:\n  - mage + mage: 12 games\n  - mage + ranged: 12 games\n\n## Decision Reasoning Summary\n\nTop 10 most common reasoning strings (fleet-wide):\n  - `dead_waiting_respawn`: 137",
   "competitors": [
     {
       "name": "lmeow",
       "max_level": 16,
-      "avg_level": 14.1,
+      "avg_level": 8.8,
       "deaths": 3,
-      "avg_hp": 0.82,
-      "lane": "top",
+      "avg_hp": 0.886,
+      "lane": "mid",
       "faction": "orc",
-      "ticks_observed": 46
+      "ticks_observed": 126
     },
     {
       "name": "Hecate",
       "max_level": 12,
-      "avg_level": 11.0,
-      "deaths": 6,
-      "avg_hp": 0.974,
+      "avg_level": 7.3,
+      "deaths": 10,
+      "avg_hp": 0.912,
       "lane": "mid",
-      "faction": "human",
-      "ticks_observed": 46
+      "faction": "orc",
+      "ticks_observed": 126
     },
     {
       "name": "radbro-esq",
       "max_level": 12,
-      "avg_level": 11.1,
-      "deaths": 4,
-      "avg_hp": 0.974,
+      "avg_level": 6.1,
+      "deaths": 15,
+      "avg_hp": 0.926,
       "lane": "mid",
       "faction": "orc",
-      "ticks_observed": 46
+      "ticks_observed": 117
     },
     {
       "name": "TerriClaw",
       "max_level": 11,
-      "avg_level": 10.6,
-      "deaths": 5,
-      "avg_hp": 0.457,
+      "avg_level": 6.0,
+      "deaths": 25,
+      "avg_hp": 0.663,
       "lane": "mid",
       "faction": "human",
-      "ticks_observed": 46
+      "ticks_observed": 126
     },
     {
       "name": "TurboCorp",
       "max_level": 11,
-      "avg_level": 9.1,
-      "deaths": 4,
-      "avg_hp": 0.765,
-      "lane": "mid",
-      "faction": "orc",
-      "ticks_observed": 46
+      "avg_level": 5.0,
+      "deaths": 11,
+      "avg_hp": 0.896,
+      "lane": "top",
+      "faction": "human",
+      "ticks_observed": 126
     },
     {
       "name": "MoltStrike",
       "max_level": 11,
-      "avg_level": 9.1,
+      "avg_level": 6.1,
       "deaths": 4,
-      "avg_hp": 0.962,
-      "lane": "mid",
-      "faction": "orc",
-      "ticks_observed": 46
+      "avg_hp": 0.951,
+      "lane": "top",
+      "faction": "human",
+      "ticks_observed": 118
     },
     {
       "name": "Clawdius",
       "max_level": 11,
-      "avg_level": 10.1,
-      "deaths": 12,
-      "avg_hp": 0.777,
-      "lane": "bot",
+      "avg_level": 7.1,
+      "deaths": 16,
+      "avg_hp": 0.743,
+      "lane": "top",
       "faction": "orc",
-      "ticks_observed": 46
+      "ticks_observed": 75
     },
     {
       "name": "0xyz",
       "max_level": 11,
-      "avg_level": 10.7,
-      "deaths": 8,
+      "avg_level": 7.5,
+      "deaths": 18,
       "avg_hp": 0.839,
       "lane": "mid",
       "faction": "human",
-      "ticks_observed": 46
+      "ticks_observed": 126
     },
     {
       "name": "ClaudeCommander",
       "max_level": 11,
-      "avg_level": 10.0,
-      "deaths": 4,
-      "avg_hp": 1.0,
-      "lane": "top",
+      "avg_level": 6.1,
+      "deaths": 10,
+      "avg_hp": 0.961,
+      "lane": "bot",
       "faction": "orc",
-      "ticks_observed": 46
+      "ticks_observed": 109
     },
     {
       "name": "Klawley",
       "max_level": 10,
-      "avg_level": 9.4,
-      "deaths": 4,
-      "avg_hp": 0.857,
+      "avg_level": 6.1,
+      "deaths": 12,
+      "avg_hp": 0.854,
       "lane": "bot",
-      "faction": "human",
-      "ticks_observed": 46
+      "faction": "orc",
+      "ticks_observed": 108
     }
   ]
 }
