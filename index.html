@@ -12,8 +12,9 @@
   h2 { color: #7fc8ff; font-size: 14px; margin: 20px 0 8px; border-bottom: 1px solid #222; padding-bottom: 4px; }
   table { width: 100%; border-collapse: collapse; margin-bottom: 12px; }
   th { color: #7fff7f; text-align: left; padding: 4px 10px 4px 0; border-bottom: 1px solid #333; }
-  td { padding: 3px 10px 3px 0; border-bottom: 1px solid #1a1a1a; }
+  td { padding: 4px 10px 4px 0; border-bottom: 1px solid #1a1a1a; vertical-align: middle; }
   tr:hover td { background: #111; }
+  .portrait { width: 48px; height: 48px; image-rendering: pixelated; border-radius: 4px; display: block; }
   .hp-bar { display: inline-block; height: 8px; background: #2a4; border-radius: 2px; vertical-align: middle; margin-right: 4px; }
   .hp-low { background: #a22; }
   .hp-mid { background: #aa4; }
@@ -25,8 +26,10 @@
   .error { color: #f55; font-style: italic; }
   .loading { color: #555; }
   a { color: #7fc8ff; }
-  .tag { display: inline-block; background: #1a2a1a; color: #7fff7f; border-radius: 2px; padding: 1px 5px; font-size: 11px; }
-  .tag-dead { background: #2a1a1a; color: #f55; }
+  .tag { display: inline-block; border-radius: 2px; padding: 1px 6px; font-size: 11px; font-weight: bold; }
+  .tag-deployed { background: #1a2a1a; color: #7fff7f; }
+  .tag-idle     { background: #1a1a2a; color: #7fc8ff; }
+  .tag-offline  { background: #2a1a1a; color: #f55; }
   footer { margin-top: 24px; color: #333; font-size: 11px; }
 </style>
 </head>
@@ -37,13 +40,13 @@
 <h2>Fleet Status</h2>
 <table id="fleet-table">
   <thead><tr>
-    <th>Bot</th><th>Class</th><th>Lane</th><th>HP</th><th>Level</th><th>Last Action</th><th>Last Seen</th>
+    <th></th><th>Bot</th><th>Class</th><th>Lane</th><th>HP</th><th>Level</th><th>Last Action</th><th>Last Tick</th>
   </tr></thead>
-  <tbody id="fleet-body"><tr><td colspan="7" class="loading">Loading fleet data...</td></tr></tbody>
+  <tbody id="fleet-body"><tr><td colspan="8" class="loading">Loading fleet data...</td></tr></tbody>
 </table>
 
 <h2>Summary (last 24h)</h2>
-<div class="stats-grid" id="stats-grid">
+<div class="stats-grid">
   <div class="stat-box"><div class="stat-label">Games</div><div class="stat-value" id="s-games">—</div></div>
   <div class="stat-box"><div class="stat-label">Deaths</div><div class="stat-value" id="s-deaths">—</div></div>
   <div class="stat-box"><div class="stat-label">Recalls</div><div class="stat-value" id="s-recalls">—</div></div>
@@ -74,6 +77,23 @@ function ago(ts) {
   return Math.floor(diff / 3600) + 'h ago';
 }
 
+function statusTag(bot) {
+  const ts = bot.last_seen;
+  if (!ts) return '<span class="tag tag-offline">offline</span>';
+  const age = (Date.now() - new Date(ts)) / 1000;
+  if (age < 30)  return '<span class="tag tag-deployed">deployed</span>';
+  if (age < 300) return '<span class="tag tag-idle">idle</span>';
+  return '<span class="tag tag-offline">offline</span>';
+}
+
+function portrait(name) {
+  const lower = (name || '').toLowerCase();
+  const fallback = `https://api.dicebear.com/7.x/pixel-art/svg?seed=${encodeURIComponent(name)}`;
+  return `<img src="images/${lower}.png"
+               onerror="this.onerror=null;this.src='${fallback}';"
+               alt="${name}" width="48" height="48" class="portrait">`;
+}
+
 function render(data) {
   document.getElementById('updated').textContent =
     'Last updated: ' + (data.generated_at ? new Date(data.generated_at).toUTCString() : '—');
@@ -81,23 +101,21 @@ function render(data) {
   const bots = data.bots || [];
   const tbody = document.getElementById('fleet-body');
   if (!bots.length) {
-    tbody.innerHTML = '<tr><td colspan="7" class="loading">No bot data available.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="8" class="loading">No bot data available.</td></tr>';
   } else {
     tbody.innerHTML = bots.map(b => {
       const hp = b.hp_pct != null ? b.hp_pct : null;
       const hpBar = hp != null
         ? `<span class="hp-bar ${hpColor(hp)}" style="width:${Math.round(hp*60)}px"></span>${Math.round(hp*100)}%`
         : '—';
-      const aliveTag = b.alive === false
-        ? '<span class="tag tag-dead">dead</span>'
-        : b.alive === true ? '<span class="tag">alive</span>' : '';
       return `<tr>
-        <td><b>${b.name}</b> ${aliveTag}</td>
+        <td style="width:52px">${portrait(b.name)}</td>
+        <td><b>${b.name}</b><br>${statusTag(b)}</td>
         <td>${b.hero_class || '—'}</td>
         <td>${b.lane || '—'}</td>
         <td>${hpBar}</td>
         <td>${b.level != null ? b.level : '—'}</td>
-        <td style="color:#777;font-size:11px">${(b.last_action || '—').slice(0, 40)}</td>
+        <td style="color:#777;font-size:11px">${(b.last_action || '—').slice(0, 36)}</td>
         <td style="color:#555">${ago(b.last_seen)}</td>
       </tr>`;
     }).join('');
@@ -120,7 +138,7 @@ async function refresh() {
     render(await r.json());
   } catch (e) {
     document.getElementById('fleet-body').innerHTML =
-      '<tr><td colspan="7" class="error">Failed to load data: ' + e.message + '</td></tr>';
+      '<tr><td colspan="8" class="error">Failed to load data: ' + e.message + '</td></tr>';
     document.getElementById('report-text').textContent = 'Failed to load: ' + e.message;
   }
 }
