@@ -1,54 +1,54 @@
 {
-  "generated_at": "2026-04-19T05:03:00.998774+00:00",
+  "generated_at": "2026-04-19T05:05:02.668870+00:00",
   "bots": [
     {
       "name": "Aerith",
-      "hp_pct": null,
-      "lane": "mid",
-      "level": 12,
-      "alive": false,
-      "hero_class": "mage",
-      "last_action": "dead_waiting_respawn",
-      "last_seen": "2026-04-19T05:03:00.267691+00:00",
-      "mmr": null,
-      "lifetime_won": null,
-      "lifetime_played": null
-    },
-    {
-      "name": "Barret",
-      "hp_pct": 1.0,
-      "lane": "bot",
-      "level": 12,
-      "alive": true,
-      "hero_class": "ranged",
-      "last_action": "ping:bot",
-      "last_seen": "2026-04-19T05:02:58.287822+00:00",
-      "mmr": null,
-      "lifetime_won": null,
-      "lifetime_played": null
-    },
-    {
-      "name": "Cloud",
       "hp_pct": null,
       "lane": "mid",
       "level": 13,
       "alive": false,
       "hero_class": "mage",
       "last_action": "dead_waiting_respawn",
-      "last_seen": "2026-04-19T05:02:55.848391+00:00",
+      "last_seen": "2026-04-19T05:05:00.549103+00:00",
+      "mmr": null,
+      "lifetime_won": null,
+      "lifetime_played": null
+    },
+    {
+      "name": "Barret",
+      "hp_pct": null,
+      "lane": "mid",
+      "level": 14,
+      "alive": false,
+      "hero_class": "ranged",
+      "last_action": "dead_waiting_respawn",
+      "last_seen": "2026-04-19T05:05:00.653278+00:00",
+      "mmr": null,
+      "lifetime_won": null,
+      "lifetime_played": null
+    },
+    {
+      "name": "Cloud",
+      "hp_pct": 1.0,
+      "lane": "mid",
+      "level": 14,
+      "alive": true,
+      "hero_class": "mage",
+      "last_action": "ping:mid",
+      "last_seen": "2026-04-19T05:05:01.666979+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
     },
     {
       "name": "Sephiroth",
-      "hp_pct": 1.0,
+      "hp_pct": null,
       "lane": "mid",
-      "level": 12,
-      "alive": true,
+      "level": 13,
+      "alive": false,
       "hero_class": "mage",
-      "last_action": "hold_mid:best_score_15",
-      "last_seen": "2026-04-19T05:02:58.459930+00:00",
+      "last_action": "dead_waiting_respawn",
+      "last_seen": "2026-04-19T05:05:00.887450+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
@@ -59,9 +59,9 @@
     "wins": 28,
     "losses": 29,
     "win_pct": 49,
-    "deaths": 415,
-    "deaths_per_game": 11.2,
-    "recalls": 292,
+    "deaths": 419,
+    "deaths_per_game": 11.3,
+    "recalls": 295,
     "lane_switches": 686,
     "avg_level": 7.2
   },
@@ -69,102 +69,102 @@
   "competitors": [
     {
       "name": "lmeow",
-      "max_level": 15,
-      "avg_level": 8.9,
+      "max_level": 17,
+      "avg_level": 9.3,
       "deaths": 3,
-      "avg_hp": 0.897,
-      "lane": "mid",
+      "avg_hp": 0.903,
+      "lane": "bot",
       "faction": "orc",
-      "ticks_observed": 37
-    },
-    {
-      "name": "0xyz",
-      "max_level": 14,
-      "avg_level": 7.7,
-      "deaths": 4,
-      "avg_hp": 0.735,
-      "lane": "mid",
-      "faction": "human",
-      "ticks_observed": 37
-    },
-    {
-      "name": "ExH_Mage3",
-      "max_level": 14,
-      "avg_level": 8.7,
-      "deaths": 6,
-      "avg_hp": 0.837,
-      "lane": "mid",
-      "faction": "human",
-      "ticks_observed": 26
-    },
-    {
-      "name": "ExH_Mage5",
-      "max_level": 14,
-      "avg_level": 8.8,
-      "deaths": 4,
-      "avg_hp": 0.862,
-      "lane": "mid",
-      "faction": "orc",
-      "ticks_observed": 26
+      "ticks_observed": 39
     },
     {
       "name": "Hecate",
-      "max_level": 13,
-      "avg_level": 8.3,
+      "max_level": 15,
+      "avg_level": 8.6,
       "deaths": 8,
-      "avg_hp": 0.917,
+      "avg_hp": 0.923,
       "lane": "mid",
       "faction": "orc",
-      "ticks_observed": 37
+      "ticks_observed": 39
+    },
+    {
+      "name": "0xyz",
+      "max_level": 15,
+      "avg_level": 8.1,
+      "deaths": 4,
+      "avg_hp": 0.74,
+      "lane": "mid",
+      "faction": "human",
+      "ticks_observed": 39
+    },
+    {
+      "name": "ExH_Mage3",
+      "max_level": 15,
+      "avg_level": 9.1,
+      "deaths": 7,
+      "avg_hp": 0.824,
+      "lane": "mid",
+      "faction": "human",
+      "ticks_observed": 28
+    },
+    {
+      "name": "ExH_Mage5",
+      "max_level": 15,
+      "avg_level": 9.2,
+      "deaths": 5,
+      "avg_hp": 0.862,
+      "lane": "mid",
+      "faction": "orc",
+      "ticks_observed": 28
+    },
+    {
+      "name": "Klawley",
+      "max_level": 14,
+      "avg_level": 7.1,
+      "deaths": 6,
+      "avg_hp": 0.74,
+      "lane": "top",
+      "faction": "human",
+      "ticks_observed": 35
+    },
+    {
+      "name": "ExHuman777",
+      "max_level": 13,
+      "avg_level": 7.2,
+      "deaths": 4,
+      "avg_hp": 0.792,
+      "lane": "top",
+      "faction": "orc",
+      "ticks_observed": 28
+    },
+    {
+      "name": "ExH_Contr",
+      "max_level": 13,
+      "avg_level": 7.1,
+      "deaths": 8,
+      "avg_hp": 0.95,
+      "lane": "bot",
+      "faction": "human",
+      "ticks_observed": 28
+    },
+    {
+      "name": "MoltStrike",
+      "max_level": 12,
+      "avg_level": 6.5,
+      "deaths": 5,
+      "avg_hp": 0.913,
+      "lane": "top",
+      "faction": "human",
+      "ticks_observed": 39
     },
     {
       "name": "Clawdius",
       "max_level": 12,
-      "avg_level": 7.5,
+      "avg_level": 7.8,
       "deaths": 6,
-      "avg_hp": 0.854,
-      "lane": "bot",
-      "faction": "orc",
-      "ticks_observed": 31
-    },
-    {
-      "name": "ExHuman777",
-      "max_level": 12,
-      "avg_level": 6.8,
-      "deaths": 4,
-      "avg_hp": 0.771,
+      "avg_hp": 0.839,
       "lane": "top",
       "faction": "orc",
-      "ticks_observed": 26
-    },
-    {
-      "name": "TerriClaw",
-      "max_level": 11,
-      "avg_level": 6.5,
-      "deaths": 11,
-      "avg_hp": 0.87,
-      "lane": "mid",
-      "faction": "orc",
-      "ticks_observed": 37
-    },
-    {
-      "name": "MoltStrike",
-      "max_level": 11,
-      "avg_level": 6.2,
-      "deaths": 5,
-      "avg_hp": 0.907,
-      "lane": "bot",
-      "faction": "human",
-      "ticks_observed": 37
-    },
-    {
-      "name": "Klawley",
-      "max_level": 11,
-      "avg_level": 6.7,
-      "deaths": 6,
-      "avg_hp": 0.749,
-      "lane": "bot",
-      "faction": "human",
       "ticks_observed": 33
     }
   ]
