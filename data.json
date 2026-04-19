@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T03:45:01.958824+00:00",
+  "generated_at": "2026-04-19T03:45:20.050279+00:00",
   "bots": [
     {
       "name": "Aerith",
@@ -9,7 +9,10 @@
       "alive": true,
       "hero_class": "mage",
       "last_action": "ping:mid",
-      "last_seen": "2026-04-19T03:44:50.210289+00:00"
+      "last_seen": "2026-04-19T03:44:50.210289+00:00",
+      "mmr": null,
+      "lifetime_won": null,
+      "lifetime_played": null
     },
     {
       "name": "Barret",
@@ -19,7 +22,10 @@
       "alive": true,
       "hero_class": "ranged",
       "last_action": "ping:bot",
-      "last_seen": "2026-04-19T03:44:49.811161+00:00"
+      "last_seen": "2026-04-19T03:44:49.811161+00:00",
+      "mmr": null,
+      "lifetime_won": null,
+      "lifetime_played": null
     },
     {
       "name": "Cloud",
@@ -29,7 +35,10 @@
       "alive": true,
       "hero_class": "mage",
       "last_action": "hold_bot:best_score_-15",
-      "last_seen": "2026-04-19T03:44:46.630571+00:00"
+      "last_seen": "2026-04-19T03:44:46.630571+00:00",
+      "mmr": null,
+      "lifetime_won": null,
+      "lifetime_played": null
     },
     {
       "name": "Sephiroth",
@@ -39,7 +48,10 @@
       "alive": true,
       "hero_class": "mage",
       "last_action": "ping:bot",
-      "last_seen": "2026-04-19T03:44:48.161314+00:00"
+      "last_seen": "2026-04-19T03:44:48.161314+00:00",
+      "mmr": null,
+      "lifetime_won": null,
+      "lifetime_played": null
     }
   ],
   "summary": {
