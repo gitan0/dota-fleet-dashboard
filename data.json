@@ -1,54 +1,54 @@
 {
-  "generated_at": "2026-04-19T05:10:02.623840+00:00",
+  "generated_at": "2026-04-19T05:15:04.112410+00:00",
   "bots": [
     {
       "name": "Aerith",
-      "hp_pct": 1.0,
+      "hp_pct": null,
       "lane": "top",
-      "level": 4,
-      "alive": true,
+      "level": 8,
+      "alive": false,
       "hero_class": "mage",
-      "last_action": "hold_top:best_score_-10",
-      "last_seen": "2026-04-19T05:09:59.919013+00:00",
+      "last_action": "dead_waiting_respawn",
+      "last_seen": "2026-04-19T05:14:57.714862+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
     },
     {
       "name": "Barret",
-      "hp_pct": 0.164,
-      "lane": "top",
-      "level": 5,
+      "hp_pct": 0.903,
+      "lane": "mid",
+      "level": 9,
       "alive": true,
       "hero_class": "ranged",
-      "last_action": "Recall in enemy territory HP 16%",
-      "last_seen": "2026-04-19T05:10:01.782350+00:00",
+      "last_action": "ping:mid",
+      "last_seen": "2026-04-19T05:15:00.150108+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
     },
     {
       "name": "Cloud",
-      "hp_pct": 1.0,
+      "hp_pct": 0.732,
       "lane": "top",
-      "level": 5,
+      "level": 9,
       "alive": true,
       "hero_class": "mage",
-      "last_action": "ping:top",
-      "last_seen": "2026-04-19T05:09:59.332194+00:00",
+      "last_action": "hold_top:best_score_-5",
+      "last_seen": "2026-04-19T05:14:57.777633+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
     },
     {
       "name": "Sephiroth",
-      "hp_pct": 1.0,
+      "hp_pct": 0.798,
       "lane": "top",
-      "level": 5,
+      "level": 11,
       "alive": true,
       "hero_class": "mage",
-      "last_action": "\u2192mid",
-      "last_seen": "2026-04-19T05:09:59.596623+00:00",
+      "last_action": "hold_top:best_score_5",
+      "last_seen": "2026-04-19T05:14:58.984714+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
@@ -59,9 +59,9 @@
     "wins": 29,
     "losses": 30,
     "win_pct": 49,
-    "deaths": 424,
-    "deaths_per_game": 11.2,
-    "recalls": 305,
+    "deaths": 437,
+    "deaths_per_game": 11.5,
+    "recalls": 311,
     "lane_switches": 690,
     "avg_level": 7.2
   },
@@ -70,22 +70,22 @@
     {
       "name": "lmeow",
       "max_level": 18,
-      "avg_level": 9.2,
-      "deaths": 3,
-      "avg_hp": 0.881,
+      "avg_level": 9.1,
+      "deaths": 5,
+      "avg_hp": 0.892,
       "lane": "mid",
       "faction": "orc",
-      "ticks_observed": 44
+      "ticks_observed": 49
     },
     {
       "name": "0xyz",
       "max_level": 16,
-      "avg_level": 8.0,
-      "deaths": 5,
-      "avg_hp": 0.747,
+      "avg_level": 8.4,
+      "deaths": 6,
+      "avg_hp": 0.766,
       "lane": "mid",
       "faction": "human",
-      "ticks_observed": 44
+      "ticks_observed": 49
     },
     {
       "name": "ExH_Mage3",
@@ -110,22 +110,22 @@
     {
       "name": "Hecate",
       "max_level": 15,
-      "avg_level": 8.6,
+      "avg_level": 8.9,
       "deaths": 9,
-      "avg_hp": 0.927,
+      "avg_hp": 0.931,
       "lane": "mid",
       "faction": "human",
-      "ticks_observed": 44
+      "ticks_observed": 49
     },
     {
       "name": "ExHuman777",
       "max_level": 15,
-      "avg_level": 7.3,
-      "deaths": 6,
-      "avg_hp": 0.765,
+      "avg_level": 7.6,
+      "deaths": 7,
+      "avg_hp": 0.779,
       "lane": "bot",
       "faction": "orc",
-      "ticks_observed": 33
+      "ticks_observed": 38
     },
     {
       "name": "Klawley",
@@ -150,22 +150,22 @@
     {
       "name": "ExZo",
       "max_level": 14,
-      "avg_level": 7.0,
-      "deaths": 6,
-      "avg_hp": 0.83,
+      "avg_level": 7.9,
+      "deaths": 7,
+      "avg_hp": 0.855,
       "lane": "mid",
       "faction": "human",
-      "ticks_observed": 23
+      "ticks_observed": 28
     },
     {
       "name": "Clawdius",
       "max_level": 13,
-      "avg_level": 7.6,
-      "deaths": 6,
-      "avg_hp": 0.833,
-      "lane": "mid",
+      "avg_level": 7.4,
+      "deaths": 7,
+      "avg_hp": 0.857,
+      "lane": "bot",
       "faction": "orc",
-      "ticks_observed": 38
+      "ticks_observed": 43
     }
   ]
 }
