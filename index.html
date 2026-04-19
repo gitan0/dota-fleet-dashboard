@@ -63,6 +63,14 @@
   <div class="stat-box"><div class="stat-label">Lane Switches</div><div class="stat-value" id="s-switches">—</div></div>
 </div>
 
+<h2>Competitor Intel</h2>
+<table id="comp-table">
+  <thead><tr>
+    <th>Player</th><th>Max Lvl</th><th>Avg Lvl</th><th>Deaths</th><th>Avg HP</th><th>Lane</th><th>Faction</th>
+  </tr></thead>
+  <tbody id="comp-body"><tr><td colspan="7" class="loading">Loading...</td></tr></tbody>
+</table>
+
 <h2>Battle Log</h2>
 <div class="report" id="report-text">Loading...</div>
 
@@ -144,6 +152,22 @@ function render(data) {
   document.getElementById('s-switches').textContent = s.lane_switches ?? '—';
 
   document.getElementById('report-text').textContent = data.latest_report || '(no report yet)';
+
+  const comps = data.competitors || [];
+  const cbody = document.getElementById('comp-body');
+  if (!comps.length) {
+    cbody.innerHTML = '<tr><td colspan="7" class="loading">No competitor data yet.</td></tr>';
+  } else {
+    cbody.innerHTML = comps.map(c => `<tr>
+      <td><b>${c.name}</b></td>
+      <td style="color:#fff">${c.max_level ?? '—'}</td>
+      <td style="color:#999">${c.avg_level ?? '—'}</td>
+      <td>${c.deaths ?? '—'}</td>
+      <td>${c.avg_hp != null ? Math.round(c.avg_hp * 100) + '%' : '—'}</td>
+      <td style="color:#777;font-size:11px">${c.lane || '—'}</td>
+      <td style="color:#555;font-size:11px">${c.faction || '—'}</td>
+    </tr>`).join('');
+  }
 }
 
 async function refresh() {
