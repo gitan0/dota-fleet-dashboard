@@ -71,6 +71,9 @@
   <tbody id="comp-body"><tr><td colspan="7" class="loading">Loading...</td></tr></tbody>
 </table>
 
+<h2>Patch Notes</h2>
+<div class="report" id="patch-notes">Loading...</div>
+
 <h2>Battle Log</h2>
 <div class="report" id="report-text">Loading...</div>
 
@@ -151,6 +154,7 @@ function render(data) {
   document.getElementById('s-level').textContent = s.avg_level != null ? s.avg_level.toFixed(1) : '—';
   document.getElementById('s-switches').textContent = s.lane_switches ?? '—';
 
+  document.getElementById('patch-notes').textContent = data.patch_notes || '(no patch notes)';
   document.getElementById('report-text').textContent = data.latest_report || '(no report yet)';
 
   const comps = data.competitors || [];
