@@ -46,9 +46,9 @@
 <h2>Fleet Status</h2>
 <table id="fleet-table">
   <thead><tr>
-    <th></th><th>Bot</th><th>Class</th><th>Lane</th><th>HP</th><th>Level</th><th>Last Action</th><th>Last Tick</th>
+    <th></th><th>Bot</th><th>Class</th><th>Lane</th><th>HP</th><th>Level</th><th>MMR</th><th>Last Action</th><th>Last Tick</th>
   </tr></thead>
-  <tbody id="fleet-body"><tr><td colspan="8" class="loading">Loading fleet data...</td></tr></tbody>
+  <tbody id="fleet-body"><tr><td colspan="9" class="loading">Loading fleet data...</td></tr></tbody>
 </table>
 
 <h2>Summary (last 24h)</h2>
@@ -112,7 +112,7 @@ function render(data) {
   const bots = data.bots || [];
   const tbody = document.getElementById('fleet-body');
   if (!bots.length) {
-    tbody.innerHTML = '<tr><td colspan="8" class="loading">No bot data available.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="9" class="loading">No bot data available.</td></tr>';
   } else {
     tbody.innerHTML = bots.map(b => {
       const hp = b.hp_pct != null ? b.hp_pct : null;
@@ -126,6 +126,7 @@ function render(data) {
         <td>${b.lane || '—'}</td>
         <td>${hpBar}</td>
         <td>${b.level != null ? b.level : '—'}</td>
+        <td style="color:#7fc8ff">${b.mmr != null ? b.mmr : '—'}</td>
         <td style="color:#777;font-size:11px">${(b.last_action || '—').slice(0, 36)}</td>
         <td style="color:#555">${ago(b.last_seen)}</td>
       </tr>`;
