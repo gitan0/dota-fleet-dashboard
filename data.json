@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-20T12:00:04.095372+00:00",
+  "generated_at": "2026-04-20T12:00:09.614110+00:00",
   "bots": [
     {
       "name": "Aerith",
@@ -8,8 +8,8 @@
       "level": 15,
       "alive": true,
       "hero_class": "mage",
-      "last_action": "hold_bot:best_score_15",
-      "last_seen": "2026-04-20T12:00:01.720926+00:00",
+      "last_action": "ping:base",
+      "last_seen": "2026-04-20T12:00:06.171027+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
@@ -21,21 +21,21 @@
       "level": 12,
       "alive": true,
       "hero_class": "ranged",
-      "last_action": "hold_bot:best_score_15",
-      "last_seen": "2026-04-20T12:00:01.112099+00:00",
+      "last_action": "ping:base",
+      "last_seen": "2026-04-20T12:00:07.532205+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
     },
     {
       "name": "Cloud",
-      "hp_pct": 1.0,
+      "hp_pct": null,
       "lane": "bot",
       "level": 15,
-      "alive": true,
+      "alive": false,
       "hero_class": "mage",
-      "last_action": "ping:base",
-      "last_seen": "2026-04-20T12:00:01.801988+00:00",
+      "last_action": "dead_waiting_respawn",
+      "last_seen": "2026-04-20T12:00:05.879561+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
@@ -47,8 +47,8 @@
       "level": 12,
       "alive": true,
       "hero_class": "mage",
-      "last_action": "hold_bot:best_score_28",
-      "last_seen": "2026-04-20T11:59:56.229135+00:00",
+      "last_action": "ping:bot",
+      "last_seen": "2026-04-20T12:00:03.583335+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
@@ -59,7 +59,7 @@
     "wins": 181,
     "losses": 220,
     "win_pct": 45,
-    "deaths": 4475,
+    "deaths": 4476,
     "deaths_per_game": 32.9,
     "recalls": 5253,
     "lane_switches": 2735,
