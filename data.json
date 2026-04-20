@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-20T00:00:03.457968+00:00",
+  "generated_at": "2026-04-20T00:00:07.676058+00:00",
   "bots": [
     {
       "name": "Aerith",
@@ -8,8 +8,8 @@
       "level": 9,
       "alive": true,
       "hero_class": "mage",
-      "last_action": "ping:bot",
-      "last_seen": "2026-04-19T23:59:59.432279+00:00",
+      "last_action": "hold_bot:best_score_5",
+      "last_seen": "2026-04-20T00:00:03.322503+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
@@ -22,7 +22,7 @@
       "alive": true,
       "hero_class": "ranged",
       "last_action": "hold_top:best_score_8",
-      "last_seen": "2026-04-20T00:00:00.157892+00:00",
+      "last_seen": "2026-04-20T00:00:05.737985+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
@@ -34,8 +34,8 @@
       "level": 9,
       "alive": true,
       "hero_class": "mage",
-      "last_action": "ping:bot",
-      "last_seen": "2026-04-20T00:00:01.787199+00:00",
+      "last_action": "hold_bot:best_score_5",
+      "last_seen": "2026-04-20T00:00:05.808743+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
@@ -121,7 +121,7 @@
       "name": "0xyz",
       "max_level": 20,
       "avg_level": 8.9,
-      "deaths": 227,
+      "deaths": 228,
       "avg_hp": 0.812,
       "lane": "mid",
       "faction": "human",
