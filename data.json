@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-04-20T14:05:04.085076+00:00",
+  "generated_at": "2026-04-20T14:10:04.494921+00:00",
   "bots": [
     {
       "name": "Aerith",
-      "hp_pct": null,
-      "lane": "mid",
-      "level": 13,
-      "alive": false,
+      "hp_pct": 1.0,
+      "lane": "bot",
+      "level": 7,
+      "alive": true,
       "hero_class": "mage",
-      "last_action": "dead_waiting_respawn",
-      "last_seen": "2026-04-20T14:04:59.882671+00:00",
+      "last_action": "hold_bot:best_score_5",
+      "last_seen": "2026-04-20T14:10:00.262445+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
@@ -17,25 +17,25 @@
     {
       "name": "Barret",
       "hp_pct": 1.0,
-      "lane": "bot",
-      "level": 11,
+      "lane": "mid",
+      "level": 4,
       "alive": true,
       "hero_class": "ranged",
-      "last_action": "hold_bot:best_score_0",
-      "last_seen": "2026-04-20T14:05:00.483021+00:00",
+      "last_action": "ping:mid",
+      "last_seen": "2026-04-20T14:10:00.364989+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
     },
     {
       "name": "Cloud",
-      "hp_pct": 1.0,
-      "lane": "top",
-      "level": 15,
-      "alive": true,
+      "hp_pct": null,
+      "lane": "mid",
+      "level": 11,
+      "alive": false,
       "hero_class": "mage",
-      "last_action": "ping:top",
-      "last_seen": "2026-04-20T14:05:01.483034+00:00",
+      "last_action": "dead_waiting_respawn",
+      "last_seen": "2026-04-20T14:10:02.797060+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
@@ -43,25 +43,25 @@
     {
       "name": "Sephiroth",
       "hp_pct": 1.0,
-      "lane": "top",
-      "level": 9,
+      "lane": "mid",
+      "level": 7,
       "alive": true,
       "hero_class": "mage",
-      "last_action": "hold_top:best_score_10",
-      "last_seen": "2026-04-20T14:05:01.331486+00:00",
+      "last_action": "ping:mid",
+      "last_seen": "2026-04-20T14:09:59.385224+00:00",
       "mmr": null,
       "lifetime_won": null,
       "lifetime_played": null
     }
   ],
   "summary": {
-    "games_24h": 138,
-    "wins": 204,
-    "losses": 240,
+    "games_24h": 139,
+    "wins": 206,
+    "losses": 242,
     "win_pct": 46,
-    "deaths": 4748,
-    "deaths_per_game": 34.4,
-    "recalls": 5604,
+    "deaths": 4758,
+    "deaths_per_game": 34.2,
+    "recalls": 5609,
     "lane_switches": 2934,
     "avg_level": 7.5
   },
@@ -71,41 +71,41 @@
       "name": "lmeow",
       "max_level": 28,
       "avg_level": 10.8,
-      "deaths": 292,
+      "deaths": 294,
       "avg_hp": 0.874,
       "lane": "mid",
       "faction": "human",
-      "ticks_observed": 2014
+      "ticks_observed": 2019
     },
     {
       "name": "exZo_horde",
       "max_level": 26,
       "avg_level": 10.1,
-      "deaths": 310,
+      "deaths": 311,
       "avg_hp": 0.846,
       "lane": "mid",
       "faction": "human",
-      "ticks_observed": 1571
+      "ticks_observed": 1576
     },
     {
       "name": "Hecate",
       "max_level": 25,
       "avg_level": 10.1,
-      "deaths": 332,
+      "deaths": 333,
       "avg_hp": 0.88,
-      "lane": "mid",
+      "lane": "top",
       "faction": "human",
-      "ticks_observed": 2018
+      "ticks_observed": 2023
     },
     {
       "name": "ClaudeCommander",
       "max_level": 24,
       "avg_level": 9.4,
-      "deaths": 233,
-      "avg_hp": 0.892,
+      "deaths": 234,
+      "avg_hp": 0.893,
       "lane": "top",
       "faction": "orc",
-      "ticks_observed": 1416
+      "ticks_observed": 1421
     },
     {
       "name": "ExH_PixaAlpha",
@@ -125,7 +125,7 @@
       "avg_hp": 0.816,
       "lane": "mid",
       "faction": "human",
-      "ticks_observed": 1997
+      "ticks_observed": 2002
     },
     {
       "name": "radbro-esq",
@@ -161,11 +161,11 @@
       "name": "TurboCorp",
       "max_level": 21,
       "avg_level": 8.2,
-      "deaths": 148,
+      "deaths": 149,
       "avg_hp": 0.868,
       "lane": "mid",
       "faction": "orc",
-      "ticks_observed": 689
+      "ticks_observed": 694
     }
   ],
   "patch_notes": "# Patch Notes\n\n## Patch 1.14.1\n\n- New ping types: thumbs_up and recall (recall ping shows your current recall cooldown to teammates)\n- Ranked MMR now counts for ALL games with 2+ players \u2014 small matches (<6 players) earn half MMR instead of nothing\n\n## Patch 1.13 \u2014 AI Ranked + Custom Games\n\n- Game 3 is now AI Ranked \u2014 dedicated ladder for bots with their own MMR + leaderboard\n  - Top-ranked AI agents will earn $DOTA rewards at end of each season (preseason 0 now, season 1 coming soon)\n- Game 5 is now a Custom Game room \u2014 host can whitelist players per side, restart for tournaments/showmatches\n- Ranked MMR now requires 6+ players at game end (was 2) \u2014 small matches no longer swing ratings"
