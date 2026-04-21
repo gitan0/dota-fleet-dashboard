@@ -6,34 +6,69 @@
 <title>Defenders of Midgar — Fleet Dashboard</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: #0d0d0d; color: #c8c8c8; font-family: 'Courier New', monospace; font-size: 13px; padding: 20px; }
+  body { background: #0d0d0d; color: #c8c8c8; font-family: 'Courier New', monospace; font-size: 13px; padding: 20px; max-width: 1200px; }
   h1 { color: #7fff7f; font-size: 18px; margin-bottom: 4px; }
-  .subtitle { color: #555; margin-bottom: 20px; }
-  h2 { color: #7fc8ff; font-size: 14px; margin: 20px 0 8px; border-bottom: 1px solid #222; padding-bottom: 4px; }
+  .subtitle { color: #555; margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  h2 { color: #7fc8ff; font-size: 14px; margin: 24px 0 8px; border-bottom: 1px solid #222; padding-bottom: 4px; }
   table { width: 100%; border-collapse: collapse; margin-bottom: 12px; }
-  th { color: #7fff7f; text-align: left; padding: 4px 10px 4px 0; border-bottom: 1px solid #333; }
-  td { padding: 4px 10px 4px 0; border-bottom: 1px solid #1a1a1a; vertical-align: middle; }
+  th { color: #7fff7f; text-align: left; padding: 4px 10px 4px 0; border-bottom: 1px solid #333; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+  td { padding: 5px 10px 5px 0; border-bottom: 1px solid #1a1a1a; vertical-align: middle; }
   tr:hover td { background: #111; }
-  .portrait { width: 48px; height: 48px; image-rendering: pixelated; border-radius: 4px; display: block; }
-  .hp-bar { display: inline-block; height: 8px; background: #2a4; border-radius: 2px; vertical-align: middle; margin-right: 4px; }
-  .hp-low { background: #a22; }
-  .hp-mid { background: #aa4; }
-  .stats-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; margin-bottom: 12px; }
+  .portrait { width: 40px; height: 40px; image-rendering: pixelated; border-radius: 4px; display: block; }
+  .hp-bar-track { display: inline-block; width: 60px; height: 7px; background: #1a1a1a; border-radius: 2px; vertical-align: middle; margin-right: 5px; }
+  .hp-bar-fill { display: block; height: 100%; border-radius: 2px; background: #2a4; }
+  .hp-low  .hp-bar-fill { background: #a22; }
+  .hp-mid  .hp-bar-fill { background: #aa4; }
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin-bottom: 12px; }
   .stat-box { background: #111; border: 1px solid #222; padding: 10px; border-radius: 3px; }
-  .stat-label { color: #555; font-size: 11px; }
-  .stat-value { color: #fff; font-size: 20px; margin-top: 2px; }
-  .report { background: #0a0a0a; border: 1px solid #222; padding: 12px; white-space: pre-wrap; color: #999; font-size: 12px; max-height: 300px; overflow-y: auto; }
+  .stat-label { color: #555; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .stat-value { color: #fff; font-size: 20px; margin-top: 4px; }
+  .stat-sub { color: #555; font-size: 11px; margin-top: 2px; }
+  .report { background: #0a0a0a; border: 1px solid #222; padding: 12px; white-space: pre-wrap; color: #888; font-size: 11px; max-height: 260px; overflow-y: auto; line-height: 1.6; }
   .error { color: #f55; font-style: italic; }
   .loading { color: #555; }
   a { color: #7fc8ff; }
-  .tag { display: inline-block; border-radius: 2px; padding: 1px 6px; font-size: 11px; font-weight: bold; }
+  .tag { display: inline-block; border-radius: 2px; padding: 1px 6px; font-size: 10px; font-weight: bold; }
   .tag-deployed { background: #1a2a1a; color: #7fff7f; }
   .tag-idle     { background: #1a1a2a; color: #7fc8ff; }
   .tag-offline  { background: #2a1a1a; color: #f55; }
-  footer { margin-top: 24px; color: #333; font-size: 11px; }
-  .refresh-btn { background: #1a2a1a; color: #7fff7f; border: 1px solid #3a5a3a; padding: 5px 14px; font-family: inherit; font-size: 12px; cursor: pointer; border-radius: 3px; margin-left: 12px; }
+  .tag-retired  { background: #1a1a1a; color: #555; }
+  .bot-retired td { opacity: 0.45; }
+  footer { margin-top: 28px; color: #333; font-size: 11px; border-top: 1px solid #1a1a1a; padding-top: 12px; }
+  .refresh-btn { background: #1a2a1a; color: #7fff7f; border: 1px solid #3a5a3a; padding: 5px 14px; font-family: inherit; font-size: 12px; cursor: pointer; border-radius: 3px; }
   .refresh-btn:hover { background: #2a3a2a; }
   .refresh-btn:active { background: #0d1a0d; }
+
+  /* WR badge colours */
+  .wr-good { color: #7fff7f; }
+  .wr-mid  { color: #ffd57f; }
+  .wr-bad  { color: #f55; }
+  .wr-none { color: #444; }
+
+  /* Build trend table */
+  #trend-table th, #trend-table td { text-align: center; padding: 4px 8px; font-size: 12px; }
+  #trend-table td:first-child, #trend-table th:first-child { text-align: left; padding-left: 0; }
+  #trend-table .fleet-row td { color: #7fc8ff; border-top: 1px solid #333; }
+
+  /* Insight cards */
+  .insights-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; margin-bottom: 12px; }
+  .insight-card { background: #0f0f0f; border: 1px solid #222; padding: 12px; border-radius: 3px; }
+  .insight-bot  { color: #fff; font-weight: bold; margin-bottom: 8px; font-size: 13px; }
+  .insight-row  { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; font-size: 12px; }
+  .insight-label { color: #555; }
+  .fidelity-track { display: inline-block; width: 80px; height: 6px; background: #1a1a1a; border-radius: 2px; vertical-align: middle; margin: 0 6px; }
+  .fidelity-fill  { display: block; height: 100%; border-radius: 2px; background: #2a7a4a; }
+  .fidelity-low   .fidelity-fill { background: #7a3a2a; }
+  .faction-human { color: #7fc8ff; }
+  .faction-orc   { color: #ff7f7f; }
+  .faction-gap   { color: #ffd57f; font-size: 10px; }
+
+  /* Strategy history */
+  .build-history { list-style: none; }
+  .build-history li { padding: 5px 0; border-bottom: 1px solid #1a1a1a; font-size: 12px; color: #888; }
+  .build-history li .build-num { color: #7fc8ff; display: inline-block; width: 32px; }
+  .build-history li.current-build .build-num { color: #7fff7f; }
+  .build-history li.current-build { color: #bbb; }
 </style>
 </head>
 <body>
@@ -46,21 +81,31 @@
 <h2>Fleet Status</h2>
 <table id="fleet-table">
   <thead><tr>
-    <th></th><th>Bot</th><th>Class</th><th>Lane</th><th>HP</th><th>Level</th><th>MMR</th><th>Last Action</th><th>Last Tick</th>
+    <th></th><th>Bot</th><th>Class</th><th>Lane</th><th>HP</th><th>Level</th>
+    <th>MMR</th><th>Rank</th><th>Lifetime WR</th><th>Last Action</th><th>Last Tick</th>
   </tr></thead>
-  <tbody id="fleet-body"><tr><td colspan="9" class="loading">Loading fleet data...</td></tr></tbody>
+  <tbody id="fleet-body"><tr><td colspan="11" class="loading">Loading fleet data...</td></tr></tbody>
 </table>
 
 <h2>Summary (last 24h)</h2>
 <div class="stats-grid">
   <div class="stat-box"><div class="stat-label">Games</div><div class="stat-value" id="s-games">—</div></div>
-  <div class="stat-box"><div class="stat-label">Wins</div><div class="stat-value" id="s-wins">—</div></div>
-  <div class="stat-box"><div class="stat-label">Win %</div><div class="stat-value" id="s-winpct">—</div></div>
-  <div class="stat-box"><div class="stat-label">Deaths</div><div class="stat-value" id="s-deaths">—</div></div>
-  <div class="stat-box"><div class="stat-label">Deaths/Game</div><div class="stat-value" id="s-dpg">—</div></div>
+  <div class="stat-box"><div class="stat-label">Win / Loss</div><div class="stat-value" id="s-wins">—</div><div class="stat-sub" id="s-winpct">—</div></div>
+  <div class="stat-box"><div class="stat-label">Deaths</div><div class="stat-value" id="s-deaths">—</div><div class="stat-sub" id="s-dpg">— per game</div></div>
   <div class="stat-box"><div class="stat-label">Recalls</div><div class="stat-value" id="s-recalls">—</div></div>
   <div class="stat-box"><div class="stat-label">Avg Level</div><div class="stat-value" id="s-level">—</div></div>
   <div class="stat-box"><div class="stat-label">Lane Switches</div><div class="stat-value" id="s-switches">—</div></div>
+</div>
+
+<h2>Build Trend</h2>
+<table id="trend-table">
+  <thead><tr id="trend-head"><th>Bot</th></tr></thead>
+  <tbody id="trend-body"><tr><td class="loading">Loading...</td></tr></tbody>
+</table>
+
+<h2>Bot Insights</h2>
+<div class="insights-grid" id="insights-grid">
+  <div class="loading">Loading...</div>
 </div>
 
 <h2>Competitor Intel</h2>
@@ -68,39 +113,48 @@
   <thead><tr>
     <th>Player</th><th>Max Lvl</th><th>Avg Lvl</th><th>Deaths</th><th>Avg HP</th><th>Lane</th><th>Faction</th>
   </tr></thead>
-  <tbody id="comp-body"><tr><td colspan="7" class="loading">Loading...</td></tr></tbody>
+  <tbody id="comp-body"><tr><td colspan="7" class="loading">No competitor data yet.</td></tr></tbody>
 </table>
 
-<h2>Patch Notes</h2>
-<div class="report" id="patch-notes">Loading...</div>
+<h2>Strategy History</h2>
+<ul class="build-history" id="build-history"></ul>
 
 <h2>Battle Log</h2>
 <div class="report" id="report-text">Loading...</div>
 
 <footer>
-  Auto-refreshes every 30s. &nbsp;|&nbsp;
+  Auto-refreshes every 30s &nbsp;|&nbsp;
   <a href="https://github.com/gitan0/finaldefense" target="_blank">Private strategy repo</a>
 </footer>
 
 <script>
-function hpColor(hp) {
+// ── Helpers ──────────────────────────────────────────────────────────────────
+
+function hpClass(hp) {
   if (hp >= 0.6) return '';
   if (hp >= 0.3) return 'hp-mid';
   return 'hp-low';
 }
 
+function hpBar(hp) {
+  if (hp == null) return '—';
+  const cls = hpClass(hp);
+  const w = Math.round(hp * 100);
+  return `<span class="hp-bar-track ${cls}"><span class="hp-bar-fill" style="width:${w}%"></span></span>${w}%`;
+}
+
 function ago(ts) {
   if (!ts) return '—';
   const diff = Math.floor((Date.now() - new Date(ts)) / 1000);
-  if (diff < 60) return diff + 's ago';
+  if (diff < 60)   return diff + 's ago';
   if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
   return Math.floor(diff / 3600) + 'h ago';
 }
 
 function statusTag(bot, generatedAt) {
+  if (bot.active === false) return '<span class="tag tag-retired">retired</span>';
   const ts = bot.last_seen;
   if (!ts) return '<span class="tag tag-offline">offline</span>';
-  // Compare last_seen against when data.json was built, not browser clock
   const ref = generatedAt ? new Date(generatedAt) : new Date();
   const age = (ref - new Date(ts)) / 1000;
   if (age < 30)  return '<span class="tag tag-deployed">deployed</span>';
@@ -111,67 +165,211 @@ function statusTag(bot, generatedAt) {
 function portrait(name) {
   const lower = (name || '').toLowerCase();
   const fallback = `https://api.dicebear.com/7.x/pixel-art/svg?seed=${encodeURIComponent(name)}`;
-  return `<img src="images/${lower}.png"
-               onerror="this.onerror=null;this.src='${fallback}';"
-               alt="${name}" width="48" height="48" class="portrait">`;
+  return `<img src="images/${lower}.png" onerror="this.onerror=null;this.src='${fallback}';" alt="${name}" width="40" height="40" class="portrait">`;
 }
+
+function wrClass(pct) {
+  if (pct == null) return 'wr-none';
+  if (pct >= 55)   return 'wr-good';
+  if (pct >= 45)   return 'wr-mid';
+  return 'wr-bad';
+}
+
+function wrCell(pct, games) {
+  if (pct == null || games === 0) return '<span class="wr-none">—</span>';
+  return `<span class="${wrClass(pct)}">${pct}%</span><span style="color:#444;font-size:10px"> (${games})</span>`;
+}
+
+// ── Render sections ───────────────────────────────────────────────────────────
+
+function renderFleet(data) {
+  const bots = data.bots || [];
+  const tbody = document.getElementById('fleet-body');
+  if (!bots.length) {
+    tbody.innerHTML = '<tr><td colspan="11" class="loading">No bot data.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = bots.map(b => {
+    const retired = b.active === false;
+    const rowClass = retired ? 'bot-retired' : '';
+    const lw = b.lifetime_won; const lp = b.lifetime_played;
+    const lwrCell = (lw != null && lp) ? wrCell(b.lifetime_wr, lp) : '<span class="wr-none">—</span>';
+    const rankCell = b.global_rank ? `<span style="color:#ffd57f">#${b.global_rank}</span>` : '—';
+    return `<tr class="${rowClass}">
+      <td style="width:44px">${portrait(b.name)}</td>
+      <td><b>${b.name}</b><br>${statusTag(b, data.generated_at)}</td>
+      <td>${b.hero_class || '—'}</td>
+      <td>${b.lane || '—'}</td>
+      <td>${hpBar(b.hp_pct)}</td>
+      <td>${b.level != null ? b.level : '—'}</td>
+      <td style="color:#7fc8ff">${b.mmr != null ? b.mmr : '—'}</td>
+      <td>${rankCell}</td>
+      <td>${lwrCell}</td>
+      <td style="color:#777;font-size:11px">${(b.last_action || '—').slice(0, 34)}</td>
+      <td style="color:#555">${ago(b.last_seen)}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderSummary(data) {
+  const s = data.summary || {};
+  document.getElementById('s-games').textContent   = s.games_24h ?? '—';
+  document.getElementById('s-wins').textContent    = s.wins != null ? `${s.wins}W / ${s.losses}L` : '—';
+  document.getElementById('s-winpct').textContent  = s.win_pct != null ? s.win_pct + '% win rate' : '';
+  document.getElementById('s-deaths').textContent  = s.deaths ?? '—';
+  document.getElementById('s-dpg').textContent     = s.deaths_per_game != null ? s.deaths_per_game + ' per game' : '';
+  document.getElementById('s-recalls').textContent = s.recalls ?? '—';
+  document.getElementById('s-level').textContent   = s.avg_level != null ? s.avg_level.toFixed(1) : '—';
+  document.getElementById('s-switches').textContent= s.lane_switches ?? '—';
+}
+
+function renderTrend(data) {
+  const trend = data.build_trend;
+  if (!trend) return;
+  const builds = trend.builds || [];
+  const byBot  = trend.by_bot || {};
+
+  // Header row — show last 8 builds to avoid overflow
+  const shown = builds.slice(-8);
+  document.getElementById('trend-head').innerHTML =
+    '<th>Bot</th>' + shown.map(b => `<th title="${(data.build_meta||{})[b]||''}">B${b}</th>`).join('');
+
+  const activeBots = data.active_bots || [];
+  const allBots    = (data.bots || []).map(b => b.name);
+  const tbody      = document.getElementById('trend-body');
+
+  const rows = allBots.map(bot => {
+    const retired = !activeBots.includes(bot);
+    const cells   = shown.map(b => {
+      const entry = (byBot[bot] || []).find(e => e.build === b);
+      if (!entry || !entry.games) return '<td class="wr-none">—</td>';
+      return `<td class="${wrClass(entry.wr_pct)}">${entry.wr_pct}%<span style="color:#333;font-size:9px"> ${entry.games}g</span></td>`;
+    }).join('');
+    const opacity = retired ? 'opacity:0.4;' : '';
+    return `<tr style="${opacity}"><td><b>${bot}</b>${retired ? ' <span style="color:#444;font-size:10px">ret.</span>' : ''}</td>${cells}</tr>`;
+  });
+
+  // Fleet total row
+  const fleetCells = shown.map(b => {
+    let tw = 0, tl = 0;
+    allBots.forEach(bot => {
+      const entry = (byBot[bot] || []).find(e => e.build === b);
+      if (entry) { tw += entry.wins; tl += entry.losses; }
+    });
+    const gp = tw + tl;
+    if (!gp) return '<td class="wr-none">—</td>';
+    const pct = Math.round(tw / gp * 100);
+    return `<td class="${wrClass(pct)}">${pct}%</td>`;
+  }).join('');
+  rows.push(`<tr class="fleet-row"><td><b>FLEET</b></td>${fleetCells}</tr>`);
+
+  tbody.innerHTML = rows.join('');
+}
+
+function renderInsights(data) {
+  const deep       = data.deep_stats || {};
+  const activeBots = data.active_bots || [];
+  const grid       = document.getElementById('insights-grid');
+
+  const cards = activeBots.map(bot => {
+    const d = deep[bot];
+    if (!d) return '';
+
+    const fid    = d.lane_fidelity_pct;
+    const fidCls = fid != null && fid < 60 ? 'fidelity-low' : '';
+    const fidBar = fid != null
+      ? `<span class="fidelity-track ${fidCls}"><span class="fidelity-fill" style="width:${fid}%"></span></span>${fid}% in ${d.preferred_lane}`
+      : '—';
+    const fidWarn = fid != null && fid < 60 ? ' <span style="color:#ffd57f">⚠</span>' : '';
+
+    const hw = d.human_wr; const ow = d.orc_wr;
+    const gap = (hw != null && ow != null) ? Math.abs(hw - ow) : 0;
+    const factionHtml = [
+      hw != null ? `<span class="faction-human">${hw}% Human</span>` : null,
+      ow != null ? `<span class="faction-orc">${ow}% Orc</span>` : null,
+    ].filter(Boolean).join(' / ') || '—';
+    const gapWarn = gap >= 10 ? `<span class="faction-gap"> ⚠ ${gap}pt gap</span>` : '';
+
+    const rc = d.recall_counts || {};
+    const rtotal = Object.values(rc).reduce((a, b) => a + b, 0) || 1;
+    const recallParts = [
+      ['enemy-territory', rc.enemy_territory_recall],
+      ['low-hp',          rc.low_hp_recall],
+      ['emergency',       rc.emergency_defend],
+    ].filter(([, v]) => v).map(([k, v]) => `${k} ${Math.round(v/rtotal*100)}%`).join('  ');
+
+    return `<div class="insight-card">
+      <div class="insight-bot">${bot}</div>
+      <div class="insight-row">
+        <span class="insight-label">Uptime</span>
+        <span>${d.alive_pct != null ? d.alive_pct + '% alive' : '—'}</span>
+      </div>
+      <div class="insight-row">
+        <span class="insight-label">Lane fidelity${fidWarn}</span>
+        <span>${fidBar}</span>
+      </div>
+      <div class="insight-row">
+        <span class="insight-label">Faction WR${gapWarn}</span>
+        <span>${factionHtml}</span>
+      </div>
+      <div class="insight-row" style="flex-direction:column;align-items:flex-start;gap:2px">
+        <span class="insight-label">Recalls</span>
+        <span style="color:#666;font-size:11px">${recallParts || '—'}</span>
+      </div>
+    </div>`;
+  });
+
+  grid.innerHTML = cards.join('') || '<div class="loading">No insight data yet.</div>';
+}
+
+function renderBuildHistory(data) {
+  const meta   = data.build_meta || {};
+  const builds = Object.keys(meta).map(Number).sort((a, b) => b - a);
+  const trend  = data.build_trend || {};
+  const shown  = (trend.builds || []);
+  const latest = shown.length ? shown[shown.length - 1] : null;
+
+  document.getElementById('build-history').innerHTML = builds.slice(0, 10).map(b => {
+    const isCurrent = b === latest;
+    return `<li class="${isCurrent ? 'current-build' : ''}">
+      <span class="build-num">B${b}</span>
+      ${meta[b] || ''}
+    </li>`;
+  }).join('');
+}
+
+function renderCompetitors(data) {
+  const comps = data.competitors || [];
+  const cbody = document.getElementById('comp-body');
+  if (!comps.length) {
+    cbody.innerHTML = '<tr><td colspan="7" style="color:#444">No competitor data in current game state.</td></tr>';
+    return;
+  }
+  cbody.innerHTML = comps.map(c => `<tr>
+    <td><b>${c.name}</b></td>
+    <td style="color:#fff">${c.max_level ?? '—'}</td>
+    <td style="color:#999">${c.avg_level ?? '—'}</td>
+    <td>${c.deaths ?? '—'}</td>
+    <td>${c.avg_hp != null ? Math.round(c.avg_hp * 100) + '%' : '—'}</td>
+    <td style="color:#777;font-size:11px">${c.lane || '—'}</td>
+    <td style="color:#555;font-size:11px">${c.faction || '—'}</td>
+  </tr>`).join('');
+}
+
+// ── Main ─────────────────────────────────────────────────────────────────────
 
 function render(data) {
   document.getElementById('updated').textContent =
     'Last updated: ' + (data.generated_at ? new Date(data.generated_at).toUTCString() : '—');
 
-  const bots = data.bots || [];
-  const tbody = document.getElementById('fleet-body');
-  if (!bots.length) {
-    tbody.innerHTML = '<tr><td colspan="9" class="loading">No bot data available.</td></tr>';
-  } else {
-    tbody.innerHTML = bots.map(b => {
-      const hp = b.hp_pct != null ? b.hp_pct : null;
-      const hpBar = hp != null
-        ? `<span class="hp-bar ${hpColor(hp)}" style="width:${Math.round(hp*60)}px"></span>${Math.round(hp*100)}%`
-        : '—';
-      return `<tr>
-        <td style="width:52px">${portrait(b.name)}</td>
-        <td><b>${b.name}</b><br>${statusTag(b, data.generated_at)}</td>
-        <td>${b.hero_class || '—'}</td>
-        <td>${b.lane || '—'}</td>
-        <td>${hpBar}</td>
-        <td>${b.level != null ? b.level : '—'}</td>
-        <td style="color:#7fc8ff">${b.mmr != null ? b.mmr : '—'}</td>
-        <td style="color:#777;font-size:11px">${(b.last_action || '—').slice(0, 36)}</td>
-        <td style="color:#555">${ago(b.last_seen)}</td>
-      </tr>`;
-    }).join('');
-  }
+  renderFleet(data);
+  renderSummary(data);
+  renderTrend(data);
+  renderInsights(data);
+  renderBuildHistory(data);
+  renderCompetitors(data);
 
-  const s = data.summary || {};
-  document.getElementById('s-games').textContent = s.games_24h ?? '—';
-  document.getElementById('s-wins').textContent = s.wins != null ? `${s.wins}W / ${s.losses}L` : '—';
-  document.getElementById('s-winpct').textContent = s.win_pct != null ? s.win_pct + '%' : '—';
-  document.getElementById('s-deaths').textContent = s.deaths ?? '—';
-  document.getElementById('s-dpg').textContent = s.deaths_per_game ?? '—';
-  document.getElementById('s-recalls').textContent = s.recalls ?? '—';
-  document.getElementById('s-level').textContent = s.avg_level != null ? s.avg_level.toFixed(1) : '—';
-  document.getElementById('s-switches').textContent = s.lane_switches ?? '—';
-
-  document.getElementById('patch-notes').textContent = data.patch_notes || '(no patch notes)';
   document.getElementById('report-text').textContent = data.latest_report || '(no report yet)';
-
-  const comps = data.competitors || [];
-  const cbody = document.getElementById('comp-body');
-  if (!comps.length) {
-    cbody.innerHTML = '<tr><td colspan="7" class="loading">No competitor data yet.</td></tr>';
-  } else {
-    cbody.innerHTML = comps.map(c => `<tr>
-      <td><b>${c.name}</b></td>
-      <td style="color:#fff">${c.max_level ?? '—'}</td>
-      <td style="color:#999">${c.avg_level ?? '—'}</td>
-      <td>${c.deaths ?? '—'}</td>
-      <td>${c.avg_hp != null ? Math.round(c.avg_hp * 100) + '%' : '—'}</td>
-      <td style="color:#777;font-size:11px">${c.lane || '—'}</td>
-      <td style="color:#555;font-size:11px">${c.faction || '—'}</td>
-    </tr>`).join('');
-  }
 }
 
 async function refresh() {
@@ -181,8 +379,7 @@ async function refresh() {
     render(await r.json());
   } catch (e) {
     document.getElementById('fleet-body').innerHTML =
-      '<tr><td colspan="8" class="error">Failed to load data: ' + e.message + '</td></tr>';
-    document.getElementById('report-text').textContent = 'Failed to load: ' + e.message;
+      `<tr><td colspan="11" class="error">Failed to load data: ${e.message}</td></tr>`;
   }
 }
 
@@ -190,10 +387,7 @@ function manualRefresh() {
   const btn = document.querySelector('.refresh-btn');
   btn.textContent = '↻ Refreshing...';
   btn.disabled = true;
-  refresh().finally(() => {
-    btn.textContent = '↻ Refresh';
-    btn.disabled = false;
-  });
+  refresh().finally(() => { btn.textContent = '↻ Refresh'; btn.disabled = false; });
 }
 
 refresh();

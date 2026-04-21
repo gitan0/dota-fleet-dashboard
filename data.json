@@ -1,84 +1,802 @@
 {
-  "generated_at": "2026-04-20T18:32:54.931795+00:00",
+  "generated_at": "2026-04-21T03:45:03.955146+00:00",
+  "active_bots": [
+    "Aerith",
+    "Cloud",
+    "Sephiroth",
+    "Tifa",
+    "RedXIII"
+  ],
   "bots": [
     {
       "name": "Aerith",
       "hp_pct": 1.0,
-      "lane": "bot",
-      "level": 8,
+      "lane": "top",
+      "level": 1,
       "alive": true,
       "hero_class": "mage",
-      "last_action": "ping:bot",
-      "last_seen": "2026-04-20T18:32:52.573418+00:00",
+      "last_action": "ping:top",
+      "last_seen": "2026-04-21T03:44:56.241581+00:00",
+      "active": true,
       "mmr": null,
+      "global_rank": null,
       "lifetime_won": null,
-      "lifetime_played": null
+      "lifetime_played": null,
+      "lifetime_wr": null
     },
     {
       "name": "Barret",
-      "hp_pct": null,
-      "lane": "top",
-      "level": 5,
-      "alive": false,
+      "hp_pct": 0.528,
+      "lane": "bot",
+      "level": 8,
+      "alive": true,
       "hero_class": "ranged",
-      "last_action": "dead_waiting_respawn",
-      "last_seen": "2026-04-20T18:20:47.177823+00:00",
+      "last_action": "Recall in enemy territory HP 52%",
+      "last_seen": "2026-04-21T01:46:51.031321+00:00",
+      "active": false,
       "mmr": null,
+      "global_rank": null,
       "lifetime_won": null,
-      "lifetime_played": null
+      "lifetime_played": null,
+      "lifetime_wr": null
     },
     {
       "name": "Cloud",
-      "hp_pct": 0.343,
+      "hp_pct": 1.0,
       "lane": "mid",
-      "level": 10,
+      "level": 2,
       "alive": true,
       "hero_class": "mage",
-      "last_action": "Recall in enemy territory HP 34%",
-      "last_seen": "2026-04-20T18:32:53.773284+00:00",
+      "last_action": "ping:mid",
+      "last_seen": "2026-04-21T03:44:57.569365+00:00",
+      "active": true,
       "mmr": null,
+      "global_rank": null,
       "lifetime_won": null,
-      "lifetime_played": null
+      "lifetime_played": null,
+      "lifetime_wr": null
     },
     {
       "name": "Sephiroth",
-      "hp_pct": null,
+      "hp_pct": 0.09,
       "lane": "bot",
-      "level": 11,
-      "alive": false,
+      "level": 2,
+      "alive": true,
       "hero_class": "mage",
-      "last_action": "dead_waiting_respawn",
-      "last_seen": "2026-04-20T18:32:53.773476+00:00",
+      "last_action": "Recall in enemy territory HP 9%",
+      "last_seen": "2026-04-21T03:44:58.860620+00:00",
+      "active": true,
       "mmr": null,
+      "global_rank": null,
       "lifetime_won": null,
-      "lifetime_played": null
+      "lifetime_played": null,
+      "lifetime_wr": null
     },
     {
       "name": "Tifa",
-      "hp_pct": null,
-      "lane": null,
-      "level": null,
-      "alive": null,
+      "hp_pct": 1.0,
+      "lane": "mid",
+      "level": 3,
+      "alive": true,
       "hero_class": "mage",
-      "last_action": "Deploying",
-      "last_seen": "2026-04-20T18:32:47.648368+00:00",
+      "last_action": "ping:mid",
+      "last_seen": "2026-04-21T03:45:01.714891+00:00",
+      "active": true,
       "mmr": null,
+      "global_rank": null,
       "lifetime_won": null,
-      "lifetime_played": null
+      "lifetime_played": null,
+      "lifetime_wr": null
+    },
+    {
+      "name": "RedXIII",
+      "hp_pct": 0.705,
+      "lane": "top",
+      "level": 3,
+      "alive": true,
+      "hero_class": "melee",
+      "last_action": "ping:top",
+      "last_seen": "2026-04-21T03:45:00.233855+00:00",
+      "active": true,
+      "mmr": null,
+      "global_rank": null,
+      "lifetime_won": null,
+      "lifetime_played": null,
+      "lifetime_wr": null
     }
   ],
   "summary": {
-    "games_24h": 76,
-    "wins": 316,
-    "losses": 395,
-    "win_pct": 44,
-    "deaths": 4066,
-    "deaths_per_game": 53.5,
-    "recalls": 6835,
-    "lane_switches": 2856,
+    "games_24h": 186,
+    "wins": 413,
+    "losses": 507,
+    "win_pct": 45,
+    "deaths": 4900,
+    "deaths_per_game": 26.3,
+    "recalls": 7654,
+    "lane_switches": 2753,
     "avg_level": 7.7
   },
-  "latest_report": null,
-  "competitors": [],
-  "patch_notes": "# Patch Notes\n\n## Patch 1.14.1\n\n- New ping types: thumbs_up and recall (recall ping shows your current recall cooldown to teammates)\n- Ranked MMR now counts for ALL games with 2+ players \u2014 small matches (<6 players) earn half MMR instead of nothing\n\n## Patch 1.13 \u2014 AI Ranked + Custom Games\n\n- Game 3 is now AI Ranked \u2014 dedicated ladder for bots with their own MMR + leaderboard\n  - Top-ranked AI agents will earn $DOTA rewards at end of each season (preseason 0 now, season 1 coming soon)\n- Game 5 is now a Custom Game room \u2014 host can whitelist players per side, restart for tournaments/showmatches\n- Ranked MMR now requires 6+ players at game end (was 2) \u2014 small matches no longer swing ratings"
+  "build_trend": {
+    "builds": [
+      1,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14
+    ],
+    "by_bot": {
+      "Aerith": [
+        {
+          "build": 1,
+          "wins": 95,
+          "losses": 93,
+          "games": 188,
+          "wr_pct": 51,
+          "description": "Baseline (pre-session)"
+        },
+        {
+          "build": 4,
+          "wins": 1,
+          "losses": 0,
+          "games": 1,
+          "wr_pct": 100,
+          "description": "Barret\u2192bot, push mode disabled for Barret"
+        },
+        {
+          "build": 6,
+          "wins": 0,
+          "losses": 1,
+          "games": 1,
+          "wr_pct": 0,
+          "description": "$DOTA tokens + Tifa deployed (farcaster skin \u2014 broken)"
+        },
+        {
+          "build": 7,
+          "wins": 0,
+          "losses": 12,
+          "games": 12,
+          "wr_pct": 0,
+          "description": "Ring of Regen all bots [stats skewed]"
+        },
+        {
+          "build": 8,
+          "wins": 9,
+          "losses": 4,
+          "games": 13,
+          "wr_pct": 69,
+          "description": "Cloud Ring of Regen confirmed. All 5 regen."
+        },
+        {
+          "build": 9,
+          "wins": 14,
+          "losses": 16,
+          "games": 30,
+          "wr_pct": 47,
+          "description": "Tifa skin=pixagreen_mage (correct). Heal ability active."
+        },
+        {
+          "build": 10,
+          "wins": 11,
+          "losses": 3,
+          "games": 14,
+          "wr_pct": 79,
+          "description": "Cloud\u2192top. Tifa+Aerith own mid. Burst parallel deploy."
+        },
+        {
+          "build": 12,
+          "wins": 3,
+          "losses": 4,
+          "games": 7,
+          "wr_pct": 43,
+          "description": "Full 6-bot fleet. Cloud\u2192bot. Lane split confirmed."
+        },
+        {
+          "build": 13,
+          "wins": 0,
+          "losses": 1,
+          "games": 1,
+          "wr_pct": 0,
+          "description": "Barret retired (316 games, 41% WR). 5-bot fleet."
+        },
+        {
+          "build": 14,
+          "wins": 5,
+          "losses": 6,
+          "games": 11,
+          "wr_pct": 45,
+          "description": "Cloud laneSwitchPenalty\u219240. RedXIII\u219235. DANGER_RECALL 0.65\u21920.55."
+        }
+      ],
+      "Barret": [
+        {
+          "build": 1,
+          "wins": 71,
+          "losses": 117,
+          "games": 188,
+          "wr_pct": 38,
+          "description": "Baseline (pre-session)"
+        },
+        {
+          "build": 4,
+          "wins": 0,
+          "losses": 1,
+          "games": 1,
+          "wr_pct": 0,
+          "description": "Barret\u2192bot, push mode disabled for Barret"
+        },
+        {
+          "build": 6,
+          "wins": 9,
+          "losses": 0,
+          "games": 9,
+          "wr_pct": 100,
+          "description": "$DOTA tokens + Tifa deployed (farcaster skin \u2014 broken)"
+        },
+        {
+          "build": 7,
+          "wins": 0,
+          "losses": 0,
+          "games": 0,
+          "wr_pct": null,
+          "description": "Ring of Regen all bots [stats skewed]"
+        },
+        {
+          "build": 8,
+          "wins": 0,
+          "losses": 0,
+          "games": 0,
+          "wr_pct": null,
+          "description": "Cloud Ring of Regen confirmed. All 5 regen."
+        },
+        {
+          "build": 9,
+          "wins": 7,
+          "losses": 2,
+          "games": 9,
+          "wr_pct": 78,
+          "description": "Tifa skin=pixagreen_mage (correct). Heal ability active."
+        },
+        {
+          "build": 10,
+          "wins": 2,
+          "losses": 3,
+          "games": 5,
+          "wr_pct": 40,
+          "description": "Cloud\u2192top. Tifa+Aerith own mid. Burst parallel deploy."
+        },
+        {
+          "build": 12,
+          "wins": 1,
+          "losses": 6,
+          "games": 7,
+          "wr_pct": 14,
+          "description": "Full 6-bot fleet. Cloud\u2192bot. Lane split confirmed."
+        },
+        {
+          "build": 13,
+          "wins": 0,
+          "losses": 0,
+          "games": 0,
+          "wr_pct": null,
+          "description": "Barret retired (316 games, 41% WR). 5-bot fleet."
+        },
+        {
+          "build": 14,
+          "wins": 0,
+          "losses": 0,
+          "games": 0,
+          "wr_pct": null,
+          "description": "Cloud laneSwitchPenalty\u219240. RedXIII\u219235. DANGER_RECALL 0.65\u21920.55."
+        }
+      ],
+      "Cloud": [
+        {
+          "build": 1,
+          "wins": 87,
+          "losses": 100,
+          "games": 187,
+          "wr_pct": 47,
+          "description": "Baseline (pre-session)"
+        },
+        {
+          "build": 4,
+          "wins": 1,
+          "losses": 0,
+          "games": 1,
+          "wr_pct": 100,
+          "description": "Barret\u2192bot, push mode disabled for Barret"
+        },
+        {
+          "build": 6,
+          "wins": 0,
+          "losses": 1,
+          "games": 1,
+          "wr_pct": 0,
+          "description": "$DOTA tokens + Tifa deployed (farcaster skin \u2014 broken)"
+        },
+        {
+          "build": 7,
+          "wins": 12,
+          "losses": 0,
+          "games": 12,
+          "wr_pct": 100,
+          "description": "Ring of Regen all bots [stats skewed]"
+        },
+        {
+          "build": 8,
+          "wins": 2,
+          "losses": 11,
+          "games": 13,
+          "wr_pct": 15,
+          "description": "Cloud Ring of Regen confirmed. All 5 regen."
+        },
+        {
+          "build": 9,
+          "wins": 5,
+          "losses": 25,
+          "games": 30,
+          "wr_pct": 17,
+          "description": "Tifa skin=pixagreen_mage (correct). Heal ability active."
+        },
+        {
+          "build": 10,
+          "wins": 5,
+          "losses": 9,
+          "games": 14,
+          "wr_pct": 36,
+          "description": "Cloud\u2192top. Tifa+Aerith own mid. Burst parallel deploy."
+        },
+        {
+          "build": 12,
+          "wins": 4,
+          "losses": 3,
+          "games": 7,
+          "wr_pct": 57,
+          "description": "Full 6-bot fleet. Cloud\u2192bot. Lane split confirmed."
+        },
+        {
+          "build": 13,
+          "wins": 1,
+          "losses": 0,
+          "games": 1,
+          "wr_pct": 100,
+          "description": "Barret retired (316 games, 41% WR). 5-bot fleet."
+        },
+        {
+          "build": 14,
+          "wins": 4,
+          "losses": 7,
+          "games": 11,
+          "wr_pct": 36,
+          "description": "Cloud laneSwitchPenalty\u219240. RedXIII\u219235. DANGER_RECALL 0.65\u21920.55."
+        }
+      ],
+      "Sephiroth": [
+        {
+          "build": 1,
+          "wins": 85,
+          "losses": 102,
+          "games": 187,
+          "wr_pct": 45,
+          "description": "Baseline (pre-session)"
+        },
+        {
+          "build": 4,
+          "wins": 1,
+          "losses": 0,
+          "games": 1,
+          "wr_pct": 100,
+          "description": "Barret\u2192bot, push mode disabled for Barret"
+        },
+        {
+          "build": 6,
+          "wins": 0,
+          "losses": 1,
+          "games": 1,
+          "wr_pct": 0,
+          "description": "$DOTA tokens + Tifa deployed (farcaster skin \u2014 broken)"
+        },
+        {
+          "build": 7,
+          "wins": 0,
+          "losses": 12,
+          "games": 12,
+          "wr_pct": 0,
+          "description": "Ring of Regen all bots [stats skewed]"
+        },
+        {
+          "build": 8,
+          "wins": 9,
+          "losses": 4,
+          "games": 13,
+          "wr_pct": 69,
+          "description": "Cloud Ring of Regen confirmed. All 5 regen."
+        },
+        {
+          "build": 9,
+          "wins": 11,
+          "losses": 19,
+          "games": 30,
+          "wr_pct": 37,
+          "description": "Tifa skin=pixagreen_mage (correct). Heal ability active."
+        },
+        {
+          "build": 10,
+          "wins": 9,
+          "losses": 5,
+          "games": 14,
+          "wr_pct": 64,
+          "description": "Cloud\u2192top. Tifa+Aerith own mid. Burst parallel deploy."
+        },
+        {
+          "build": 12,
+          "wins": 4,
+          "losses": 3,
+          "games": 7,
+          "wr_pct": 57,
+          "description": "Full 6-bot fleet. Cloud\u2192bot. Lane split confirmed."
+        },
+        {
+          "build": 13,
+          "wins": 0,
+          "losses": 1,
+          "games": 1,
+          "wr_pct": 0,
+          "description": "Barret retired (316 games, 41% WR). 5-bot fleet."
+        },
+        {
+          "build": 14,
+          "wins": 3,
+          "losses": 8,
+          "games": 11,
+          "wr_pct": 27,
+          "description": "Cloud laneSwitchPenalty\u219240. RedXIII\u219235. DANGER_RECALL 0.65\u21920.55."
+        }
+      ],
+      "Tifa": [
+        {
+          "build": 1,
+          "wins": 0,
+          "losses": 0,
+          "games": 0,
+          "wr_pct": null,
+          "description": "Baseline (pre-session)"
+        },
+        {
+          "build": 4,
+          "wins": 0,
+          "losses": 0,
+          "games": 0,
+          "wr_pct": null,
+          "description": "Barret\u2192bot, push mode disabled for Barret"
+        },
+        {
+          "build": 6,
+          "wins": 0,
+          "losses": 0,
+          "games": 0,
+          "wr_pct": null,
+          "description": "$DOTA tokens + Tifa deployed (farcaster skin \u2014 broken)"
+        },
+        {
+          "build": 7,
+          "wins": 0,
+          "losses": 7,
+          "games": 7,
+          "wr_pct": 0,
+          "description": "Ring of Regen all bots [stats skewed]"
+        },
+        {
+          "build": 8,
+          "wins": 0,
+          "losses": 0,
+          "games": 0,
+          "wr_pct": null,
+          "description": "Cloud Ring of Regen confirmed. All 5 regen."
+        },
+        {
+          "build": 9,
+          "wins": 20,
+          "losses": 7,
+          "games": 27,
+          "wr_pct": 74,
+          "description": "Tifa skin=pixagreen_mage (correct). Heal ability active."
+        },
+        {
+          "build": 10,
+          "wins": 5,
+          "losses": 9,
+          "games": 14,
+          "wr_pct": 36,
+          "description": "Cloud\u2192top. Tifa+Aerith own mid. Burst parallel deploy."
+        },
+        {
+          "build": 12,
+          "wins": 6,
+          "losses": 1,
+          "games": 7,
+          "wr_pct": 86,
+          "description": "Full 6-bot fleet. Cloud\u2192bot. Lane split confirmed."
+        },
+        {
+          "build": 13,
+          "wins": 1,
+          "losses": 0,
+          "games": 1,
+          "wr_pct": 100,
+          "description": "Barret retired (316 games, 41% WR). 5-bot fleet."
+        },
+        {
+          "build": 14,
+          "wins": 7,
+          "losses": 4,
+          "games": 11,
+          "wr_pct": 64,
+          "description": "Cloud laneSwitchPenalty\u219240. RedXIII\u219235. DANGER_RECALL 0.65\u21920.55."
+        }
+      ],
+      "RedXIII": [
+        {
+          "build": 1,
+          "wins": 0,
+          "losses": 0,
+          "games": 0,
+          "wr_pct": null,
+          "description": "Baseline (pre-session)"
+        },
+        {
+          "build": 4,
+          "wins": 0,
+          "losses": 0,
+          "games": 0,
+          "wr_pct": null,
+          "description": "Barret\u2192bot, push mode disabled for Barret"
+        },
+        {
+          "build": 6,
+          "wins": 0,
+          "losses": 0,
+          "games": 0,
+          "wr_pct": null,
+          "description": "$DOTA tokens + Tifa deployed (farcaster skin \u2014 broken)"
+        },
+        {
+          "build": 7,
+          "wins": 0,
+          "losses": 0,
+          "games": 0,
+          "wr_pct": null,
+          "description": "Ring of Regen all bots [stats skewed]"
+        },
+        {
+          "build": 8,
+          "wins": 0,
+          "losses": 0,
+          "games": 0,
+          "wr_pct": null,
+          "description": "Cloud Ring of Regen confirmed. All 5 regen."
+        },
+        {
+          "build": 9,
+          "wins": 0,
+          "losses": 0,
+          "games": 0,
+          "wr_pct": null,
+          "description": "Tifa skin=pixagreen_mage (correct). Heal ability active."
+        },
+        {
+          "build": 10,
+          "wins": 0,
+          "losses": 0,
+          "games": 0,
+          "wr_pct": null,
+          "description": "Cloud\u2192top. Tifa+Aerith own mid. Burst parallel deploy."
+        },
+        {
+          "build": 12,
+          "wins": 3,
+          "losses": 4,
+          "games": 7,
+          "wr_pct": 43,
+          "description": "Full 6-bot fleet. Cloud\u2192bot. Lane split confirmed."
+        },
+        {
+          "build": 13,
+          "wins": 0,
+          "losses": 1,
+          "games": 1,
+          "wr_pct": 0,
+          "description": "Barret retired (316 games, 41% WR). 5-bot fleet."
+        },
+        {
+          "build": 14,
+          "wins": 4,
+          "losses": 7,
+          "games": 11,
+          "wr_pct": 36,
+          "description": "Cloud laneSwitchPenalty\u219240. RedXIII\u219235. DANGER_RECALL 0.65\u21920.55."
+        }
+      ]
+    }
+  },
+  "deep_stats": {
+    "Aerith": {
+      "preferred_lane": "mid",
+      "lane_fidelity_pct": 55,
+      "lane_ticks": {
+        "mid": 13940,
+        "bot": 5965,
+        "top": 5341
+      },
+      "alive_pct": 73,
+      "recall_counts": {
+        "low_hp_recall": 694,
+        "enemy_territory_recall": 1476,
+        "emergency_defend": 418,
+        "pre_push_recall": 42
+      },
+      "faction_wins": {
+        "orc": 69,
+        "human": 69
+      },
+      "faction_losses": {
+        "orc": 77,
+        "human": 63
+      },
+      "human_wr": 52,
+      "orc_wr": 47
+    },
+    "Barret": {
+      "preferred_lane": "bot",
+      "lane_fidelity_pct": 40,
+      "lane_ticks": {
+        "mid": 4877,
+        "top": 7896,
+        "bot": 8414
+      },
+      "alive_pct": 78,
+      "recall_counts": {
+        "emergency_defend": 305,
+        "low_hp_recall": 779,
+        "enemy_territory_recall": 1122,
+        "pre_push_recall": 15
+      },
+      "faction_wins": {
+        "orc": 46,
+        "human": 44
+      },
+      "faction_losses": {
+        "orc": 65,
+        "human": 64
+      },
+      "human_wr": 41,
+      "orc_wr": 41
+    },
+    "Cloud": {
+      "preferred_lane": "bot",
+      "lane_fidelity_pct": 25,
+      "lane_ticks": {
+        "mid": 13261,
+        "top": 5564,
+        "bot": 6362
+      },
+      "alive_pct": 74,
+      "recall_counts": {
+        "low_hp_recall": 586,
+        "emergency_defend": 407,
+        "enemy_territory_recall": 1525,
+        "pre_push_recall": 15
+      },
+      "faction_wins": {
+        "human": 68,
+        "orc": 53
+      },
+      "faction_losses": {
+        "human": 79,
+        "orc": 77
+      },
+      "human_wr": 46,
+      "orc_wr": 41
+    },
+    "Sephiroth": {
+      "preferred_lane": "bot",
+      "lane_fidelity_pct": 64,
+      "lane_ticks": {
+        "mid": 5261,
+        "top": 3886,
+        "bot": 16101
+      },
+      "alive_pct": 78,
+      "recall_counts": {
+        "low_hp_recall": 902,
+        "enemy_territory_recall": 1338,
+        "emergency_defend": 538,
+        "pre_push_recall": 14
+      },
+      "faction_wins": {
+        "orc": 53,
+        "human": 69
+      },
+      "faction_losses": {
+        "orc": 75,
+        "human": 80
+      },
+      "human_wr": 46,
+      "orc_wr": 41
+    },
+    "Tifa": {
+      "preferred_lane": "mid",
+      "lane_fidelity_pct": 80,
+      "lane_ticks": {
+        "mid": 4480,
+        "bot": 707,
+        "top": 395
+      },
+      "alive_pct": 75,
+      "recall_counts": {
+        "enemy_territory_recall": 354,
+        "pre_push_recall": 7,
+        "low_hp_recall": 104,
+        "emergency_defend": 80
+      },
+      "faction_wins": {
+        "orc": 17,
+        "human": 22
+      },
+      "faction_losses": {
+        "orc": 22,
+        "human": 6
+      },
+      "human_wr": 79,
+      "orc_wr": 44
+    },
+    "RedXIII": {
+      "preferred_lane": "top",
+      "lane_fidelity_pct": 66,
+      "lane_ticks": {
+        "top": 1241,
+        "bot": 274,
+        "mid": 360
+      },
+      "alive_pct": 77,
+      "recall_counts": {
+        "enemy_territory_recall": 162,
+        "low_hp_recall": 59,
+        "emergency_defend": 30,
+        "pre_push_recall": 2
+      },
+      "faction_wins": {
+        "orc": 3,
+        "human": 4
+      },
+      "faction_losses": {
+        "human": 3,
+        "orc": 9
+      },
+      "human_wr": 57,
+      "orc_wr": 25
+    }
+  },
+  "latest_report": "# Fleet Analysis Report \u2014 2026-04-21 00:00 UTC\n\n## Red Flags\n\n  - **Aerith**: 5.3 lane switches/game \u2192 HIGH\n  - **Aerith**: mage 100% of games \u2192 PLACEMENT bias\n  - **Barret**: 5.4 lane switches/game \u2192 HIGH\n  - **Barret**: ranged 100% of games \u2192 PLACEMENT bias\n  - **Cloud**: mage 100% of games \u2192 PLACEMENT bias\n  - **Sephiroth**: mage 100% of games \u2192 PLACEMENT bias\n\n## Per-Bot Analysis\n\n### Aerith\n- Ticks logged: 31889\n- Games (deploys): 282\n- Deaths: 5741\n- Recalls: 2594\n- Lane switches: 1482 (5.3/game)\n- Faction distribution: mage:282\n- Pings: mid:3718, bot:1358, top:1178, recall:1142, base:927\n- Avg HP when alive: 87.6%\n- Level distribution: L14:4, L15:7, L16:19, L17:53, L18:74, L19:22, L20:15, L21:18, L22:17, L23:33, L24:14, L25:6\n- Ability picks (in order): tornado, fortitude, tornado, fortitude, fortitude, tornado, fortitude, fireball, fortitude, tornado, tornado, tornado, tornado, tornado, tornado, fireball, tornado, tornado, fortitude, tornado, tornado, tornado, fortitude, tornado, tornado, fortitude, fortitude, tornado, tornado, fortitude, fireball, tornado, tornado, fortitude, tornado, tornado, fortitude, fortitude, tornado, tornado, tornado, fortitude, tornado, tornado, tornado, fortitude, fortitude, tornado, fireball, tornado, fortitude, tornado, fortitude, tornado, fortitude, fortitude, tornado, fortitude, tornado, tornado, fortitude, tornado, fireball, fortitude, tornado, tornado, tornado, tornado, fortitude, tornado, fortitude, fortitude, tornado, fortitude, fireball, fireball, tornado, fortitude, tornado, tornado, tornado, fireball, tornado, tornado, fortitude, fortitude, tornado, tornado, fortitude, tornado, fortitude, fortitude, tornado, tornado, fortitude, tornado, fortitude, fireball, fireball, fortitude, tornado, fortitude, tornado, fortitude, fortitude, fortitude, fortitude, fireball, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, tornado, tornado, tornado, fortitude, tornado, fortitude, fortitude, tornado, fortitude, tornado, tornado, tornado, fortitude, tornado, tornado, tornado, tornado, tornado, tornado, fireball, tornado, fortitude, fortitude, fortitude, tornado, fireball, fortitude, fortitude, fireball, tornado, fortitude, fortitude, fortitude, tornado, tornado, tornado, fortitude, tornado, tornado, tornado, fortitude, fortitude, tornado, tornado, tornado, tornado, fortitude, fortitude, tornado, fortitude, fortitude, tornado, fireball, fortitude, tornado, tornado, tornado, fortitude, fortitude, tornado, fortitude, fortitude, tornado, tornado, tornado, tornado, fortitude, tornado, fortitude, tornado, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, tornado, tornado, tornado, tornado, tornado, fireball, fortitude, fireball, tornado, fortitude, tornado, fortitude, tornado, fortitude, fortitude, tornado, tornado, fortitude, tornado, tornado, fortitude, tornado, tornado, fortitude, fireball, tornado, fortitude, tornado, tornado, tornado, fortitude, fortitude, fortitude, tornado, fortitude, tornado, tornado, fortitude, fireball, tornado, fortitude, tornado, fireball, tornado, tornado, tornado, fortitude, tornado, fireball, fortitude, tornado, tornado, tornado, tornado, tornado, fortitude, tornado, fortitude, fortitude, tornado, fortitude, tornado, tornado, tornado, fortitude, fortitude, tornado, tornado, tornado, fortitude, tornado, fortitude, fortitude, tornado, tornado, tornado, tornado, fortitude, fireball, tornado, fireball, tornado, fortitude, fortitude, fireball, fortitude, tornado, tornado, fortitude, tornado, tornado, fortitude, fortitude, tornado, fortitude, tornado, tornado, tornado, fortitude, tornado, tornado, tornado, tornado, tornado, tornado, fireball, fortitude, fortitude, fortitude, fortitude, tornado, tornado, tornado, fortitude, fortitude, tornado, tornado, tornado, tornado, fireball, tornado, fortitude, fireball, fireball, fireball, fortitude, fireball, fortitude, fortitude, fortitude, tornado, tornado, tornado, fireball, fortitude, tornado, fortitude, fortitude, tornado, tornado, fortitude, tornado, tornado, tornado, tornado, fireball, tornado, tornado, fireball, fireball, tornado, fortitude, tornado, fortitude, fortitude, fortitude, tornado, tornado, fortitude, tornado, fortitude, tornado, tornado, fortitude, fireball, tornado, tornado, tornado, tornado, tornado, fortitude, tornado, fortitude, fireball, tornado, fortitude, tornado, tornado, tornado, tornado, fortitude, fortitude, fortitude, tornado, fortitude, tornado, tornado, fireball, fireball, tornado, fortitude, fortitude, tornado, tornado, tornado, fortitude, tornado, tornado, fireball, fortitude, tornado, tornado, tornado, fireball, tornado, fortitude, fireball, fireball, tornado, fortitude, fortitude, tornado, tornado, tornado, tornado, fortitude, tornado, tornado, fortitude, tornado, fireball, tornado, tornado, fireball, fortitude, tornado, fortitude, fireball, tornado, fireball, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, tornado, tornado, tornado, fortitude, fortitude, fireball, tornado, tornado, fortitude, tornado, tornado, tornado, fortitude, fireball, tornado, tornado, tornado, tornado, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, tornado, tornado, tornado, fortitude, tornado, fortitude, fortitude, fireball, tornado, tornado, tornado, fortitude, fireball, fireball, fortitude, fortitude, fortitude, fortitude, tornado, tornado, fortitude, fortitude, fireball, fireball, fortitude, fortitude, fortitude, fortitude, tornado, fireball, fireball, fortitude, tornado, fortitude, tornado, fireball, fortitude, tornado, fortitude, fortitude, fireball, fortitude, tornado, fortitude, fireball, fortitude, fireball, tornado, fortitude, tornado, fortitude, fortitude, tornado, fireball, fortitude, fortitude, fireball, fortitude, tornado, fortitude, tornado, fortitude, fortitude, fortitude, fireball, fireball, tornado, tornado, tornado, tornado, tornado, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fireball, fireball, fortitude, fortitude, tornado, fortitude, fortitude, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, fortitude, fortitude, tornado, tornado, fortitude, fortitude, tornado, fortitude, tornado, tornado, fortitude, fortitude, fortitude, fireball, fortitude, fireball, fireball, fortitude, tornado, fortitude, tornado, fireball, fireball, fireball, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, fireball, tornado, fortitude, fortitude, fortitude, tornado, tornado, fireball, fireball, tornado, fortitude, fireball, fireball, fireball, fireball, fireball, fortitude, fortitude, fortitude, fortitude, fireball, fireball, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, tornado, fortitude, tornado, fortitude, fortitude, tornado, fireball, fireball, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fortitude, fortitude, fireball, tornado, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, tornado, fortitude, tornado, fortitude, fortitude, fireball, tornado, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, tornado, fortitude, fortitude, fireball, tornado, fireball, fireball, tornado, tornado, fireball, fireball, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, fireball, fortitude, fireball, fortitude, fireball, fortitude, fortitude, tornado, tornado, fortitude, fortitude, fireball, tornado, raise_skeleton, fireball, fireball, fireball, tornado, fortitude, tornado, fireball, tornado, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fortitude, fortitude, fireball, fireball, fireball, fireball, fortitude, fortitude, tornado, tornado, fortitude, fortitude, fireball, fireball, fireball, fortitude, fireball, fireball, tornado, fortitude, fortitude, tornado, fortitude, fortitude, fireball, fireball, fortitude, fortitude, fortitude, fortitude, tornado, fireball, fortitude, fireball, fortitude, tornado, fireball, fireball, fortitude, fireball, fortitude, tornado, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fireball, fireball, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, tornado, fortitude, tornado, fireball, fortitude, fortitude, fireball, fortitude, tornado, tornado, fortitude, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fireball, tornado, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, tornado, fortitude, raise_skeleton, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, fireball, fireball, fortitude, tornado, fireball, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, fireball, fireball, fortitude, fortitude, fireball, tornado, tornado, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fortitude, tornado, fortitude, tornado, fireball, fireball, tornado, fireball, fortitude, fireball, fortitude, fireball, fortitude, fireball, fortitude, fireball, fortitude, fireball, fortitude, tornado, tornado, fireball, fireball, fortitude, fireball, fortitude, fortitude, fireball, raise_skeleton, fireball, fireball, fortitude, fortitude, fireball, fortitude, fireball, fortitude, raise_skeleton, fortitude, fortitude, fortitude, fireball, tornado, fortitude, fireball, fortitude, tornado, fireball, fireball, fireball, fireball, fireball, fortitude, fortitude, raise_skeleton, fortitude, fireball, fortitude, tornado, fortitude, fortitude, fortitude, fireball, tornado, fireball, fortitude, fortitude, fireball, fortitude, tornado, fireball, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fireball, tornado, tornado, fortitude, fireball, fortitude, fireball, fireball, fortitude, fortitude, fireball, fortitude, tornado, fortitude, fireball, fireball, fireball, fortitude, tornado, fireball, fireball, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fireball, fireball, fortitude, fireball, fireball, fortitude, fortitude, fortitude, fireball, fireball, fortitude, fireball, fortitude, fortitude, raise_skeleton, fortitude, fireball, fortitude, fireball, tornado, fortitude, fortitude, fortitude, fortitude, fireball, fireball, tornado, fortitude, fortitude, fortitude, tornado, tornado, fireball, fortitude, fortitude, fortitude, fireball, fireball, fortitude, tornado, fortitude, tornado, tornado, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fireball, tornado, fireball, fortitude, fortitude, fortitude, fireball, tornado, raise_skeleton, fireball, fortitude, fireball, tornado, fireball, tornado, fortitude, fireball, fireball, fortitude, fortitude, tornado, tornado, fireball, fireball, fireball, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, fireball, tornado, tornado, fireball, fortitude, fortitude, fireball, fireball, fortitude, fireball, fireball, tornado, fortitude, fireball, fireball, tornado, tornado, fortitude, fireball, fortitude, fortitude, fireball, raise_skeleton, fireball, fireball, fortitude, tornado, fortitude, fireball, tornado, fireball, fortitude, fireball, fortitude, fortitude, fireball, fireball, fireball, fireball, tornado, tornado, fireball, tornado, fortitude, fortitude, fireball, fireball, tornado, fireball, fireball, fortitude, tornado, fireball, fortitude, fireball, fireball, tornado, fortitude, fortitude, fireball, fireball, fireball, fireball, fireball, fireball, fortitude, tornado, fortitude, tornado, tornado, fireball, fireball, fireball, fireball, tornado, tornado, fortitude, fireball, fireball, fortitude, fireball, fortitude, fireball, fortitude, raise_skeleton, fireball, raise_skeleton, tornado, tornado, fireball, tornado, tornado, fireball, fireball, fireball, fortitude, fireball, fireball, tornado, tornado, tornado, tornado, fireball, fireball, fireball, fireball, tornado, fireball, fireball, fireball, tornado, fireball, fireball, fireball, fireball, fireball, fortitude, fireball, fireball, tornado, tornado, fireball, fortitude, fireball, fireball, tornado, fireball, tornado, fireball, fortitude, fireball, fireball, tornado, tornado, tornado, tornado, fireball, fortitude, fireball, fireball, fireball, fireball, fortitude, fireball, fireball, fireball, tornado, tornado, tornado, fireball, fireball, fireball, fortitude, fireball, tornado, fireball, fireball, tornado, tornado, fireball, fortitude, fireball, fireball, fireball, fireball, fortitude, fireball, fireball, fortitude, raise_skeleton, fireball, fireball, tornado, fireball, fireball, fireball, tornado, tornado, tornado, tornado, tornado, fortitude, fireball, fireball, fireball, tornado, fireball, fireball, fireball, fortitude, tornado, fortitude, tornado, tornado, tornado, fortitude, fortitude, raise_skeleton, fireball, tornado, fireball, fireball, tornado, fireball, fireball, fireball, tornado, tornado, fortitude, tornado, raise_skeleton, fireball, tornado, tornado, fireball, tornado, fireball, fireball, fireball, tornado, fireball, tornado, raise_skeleton, tornado, fireball, tornado, tornado, fireball, fireball, fireball, tornado, tornado, tornado, raise_skeleton, tornado, raise_skeleton, tornado, tornado, raise_skeleton, fireball, tornado, fireball, fireball, fireball, fireball, raise_skeleton, tornado, fireball, fireball, tornado, fireball, fireball, fireball, tornado, fireball, tornado, fireball, tornado, raise_skeleton, fireball, fireball, tornado, fireball, tornado, tornado, tornado, raise_skeleton, fireball, fireball, fireball, tornado, fireball, tornado, tornado, tornado, tornado, fireball, fireball, fireball, fortitude, fireball, fireball, tornado, raise_skeleton, fireball, fireball, fireball, tornado, raise_skeleton, tornado, tornado, fireball, fireball, raise_skeleton, tornado, fireball, raise_skeleton, fireball, fireball, fireball, tornado, tornado, tornado, fortitude, raise_skeleton, raise_skeleton, raise_skeleton, fireball, fireball, fireball, tornado, fireball, fortitude, raise_skeleton, fireball, fireball, fortitude, tornado, fireball, fireball, raise_skeleton, fireball, fireball, tornado, raise_skeleton, fireball, fortitude, fireball, tornado, fireball, raise_skeleton, tornado, fireball, fireball, fireball, tornado, fireball, fireball, fireball, fireball, fireball, tornado, raise_skeleton, tornado, raise_skeleton, fireball, fireball, fireball, tornado, fireball, tornado, fireball, fireball, tornado, fireball, tornado, tornado, raise_skeleton, fireball, fireball, raise_skeleton, fireball, fireball, tornado, fireball, tornado, fireball, tornado, fireball, fortitude, raise_skeleton, fireball, fireball, fireball, fireball, fireball, raise_skeleton, tornado, fireball, fireball, raise_skeleton, fireball, fireball, tornado, fireball, fireball, raise_skeleton, tornado, raise_skeleton, tornado, fireball, raise_skeleton, fireball, fireball, fortitude, fireball, tornado, tornado, tornado, tornado, raise_skeleton, raise_skeleton, fireball, fortitude, fireball, fireball, tornado, tornado, fireball, fireball, tornado, raise_skeleton, raise_skeleton, tornado, fireball, tornado, fireball, tornado, tornado, raise_skeleton, fireball, tornado, tornado, tornado, fireball, fireball, fireball, fireball, fireball, tornado, tornado, fireball, raise_skeleton, fireball, fireball, fireball, tornado, fireball, raise_skeleton, fireball, tornado, tornado, fireball, fireball, tornado, fireball, tornado, raise_skeleton, tornado, raise_skeleton, fireball, tornado, fireball, tornado, fireball, tornado, tornado, raise_skeleton, raise_skeleton, fireball, tornado, tornado, fireball, tornado, tornado, raise_skeleton, tornado, tornado, raise_skeleton, tornado, tornado, fireball, tornado, tornado, tornado, raise_skeleton, raise_skeleton, tornado, raise_skeleton, raise_skeleton, tornado, fireball, fireball, tornado, tornado, tornado, tornado, raise_skeleton, fireball, raise_skeleton, raise_skeleton, tornado, raise_skeleton, fireball, tornado, raise_skeleton, fireball, fireball, tornado, tornado, raise_skeleton, tornado, fireball, fireball, raise_skeleton, fireball, tornado, tornado, fireball, fireball, raise_skeleton, fireball, tornado, fireball, tornado, raise_skeleton, fireball, fireball, tornado, raise_skeleton, raise_skeleton, fireball, tornado, raise_skeleton, tornado, fireball, tornado, raise_skeleton, fireball, fireball, raise_skeleton, fireball, raise_skeleton, tornado, tornado, raise_skeleton, fireball, fireball, tornado, raise_skeleton, tornado, tornado, tornado, raise_skeleton, fireball, tornado, tornado, tornado, tornado, fireball, fireball, tornado, tornado, fireball, tornado, fireball, fireball, fireball, fireball, tornado, tornado, tornado, fireball, fireball, tornado, tornado, raise_skeleton, tornado, tornado, fireball, tornado, tornado, fireball, raise_skeleton, fireball, fireball, tornado, tornado, fireball, raise_skeleton, tornado, tornado, raise_skeleton, tornado, raise_skeleton, fireball, fireball, tornado, raise_skeleton, tornado, tornado, fireball, fireball, raise_skeleton, fireball, raise_skeleton, fireball, tornado, fireball, tornado, raise_skeleton, fireball, fireball, tornado, fireball, fireball, fireball, tornado, tornado, raise_skeleton, raise_skeleton, fireball, fireball, tornado, raise_skeleton, tornado, fireball, tornado, tornado, tornado, tornado, tornado, raise_skeleton, fireball, tornado, tornado, raise_skeleton, tornado, tornado, raise_skeleton, tornado, tornado, fireball, tornado, tornado, tornado, tornado, tornado, raise_skeleton, tornado, tornado, fireball, tornado, tornado, tornado, tornado, fireball, fireball, tornado, tornado, fireball, fireball, tornado, tornado, fireball, tornado, tornado, tornado, tornado, raise_skeleton, tornado, tornado, fireball, tornado, tornado, tornado, tornado, raise_skeleton, tornado, tornado, tornado, raise_skeleton, tornado, tornado, fireball, fireball, fireball, raise_skeleton, raise_skeleton, tornado, fireball, fireball, tornado, raise_skeleton, raise_skeleton, raise_skeleton, fireball, tornado, fireball, fireball, raise_skeleton, tornado, tornado, fireball, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, fireball, fireball, tornado, raise_skeleton, raise_skeleton, tornado, tornado, tornado, fireball, tornado, tornado, fireball, tornado, fireball, raise_skeleton, tornado, tornado, fireball, tornado, raise_skeleton, tornado, fireball, raise_skeleton, tornado, raise_skeleton, raise_skeleton, fireball, tornado, raise_skeleton, tornado, tornado, tornado, tornado, raise_skeleton, tornado, tornado, fireball, tornado, raise_skeleton, tornado, tornado, tornado, tornado, fireball, raise_skeleton, fireball, fireball, tornado, tornado, raise_skeleton, fireball, tornado, fireball, fireball, tornado, tornado, raise_skeleton, tornado, fireball, tornado, fireball, raise_skeleton, tornado, tornado, tornado, raise_skeleton, tornado, raise_skeleton, tornado, fireball, tornado, tornado, tornado, raise_skeleton, tornado, tornado, fireball, tornado, raise_skeleton, tornado, fireball, tornado, tornado, raise_skeleton, tornado, raise_skeleton, tornado, tornado, raise_skeleton, raise_skeleton, tornado, raise_skeleton, tornado, raise_skeleton, tornado, tornado, tornado, tornado, tornado, tornado, raise_skeleton, fireball, tornado, fireball, raise_skeleton, fireball, tornado, raise_skeleton, fireball, tornado, tornado, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, tornado, tornado, raise_skeleton, raise_skeleton, tornado, raise_skeleton, raise_skeleton, fireball, tornado, fireball, raise_skeleton, tornado, raise_skeleton, raise_skeleton, fireball, tornado, tornado, fireball, raise_skeleton, raise_skeleton, tornado, fireball, tornado, tornado, raise_skeleton, fireball, raise_skeleton, raise_skeleton, raise_skeleton, fireball, raise_skeleton, raise_skeleton, fireball, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, fireball, raise_skeleton, raise_skeleton, raise_skeleton, fury, raise_skeleton, fury, tornado, tornado, fireball, raise_skeleton, tornado, fireball, tornado, tornado, tornado, fireball, fireball, tornado, raise_skeleton, tornado, tornado, raise_skeleton, tornado, tornado, tornado, fireball, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, tornado, tornado, raise_skeleton, tornado, raise_skeleton, tornado, raise_skeleton, fireball, tornado, raise_skeleton, tornado, raise_skeleton, tornado, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, fury, tornado, tornado, fury, raise_skeleton, tornado, fury, fury, tornado, raise_skeleton, raise_skeleton, fury, raise_skeleton, raise_skeleton, fury, fireball, raise_skeleton, raise_skeleton, fireball, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, tornado, raise_skeleton, tornado, fury, raise_skeleton, tornado, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, tornado, raise_skeleton, tornado, fury, raise_skeleton, tornado, fury, fireball, fury, fury, fury, fireball, fury, fury, fury, fury, fireball, fireball, fury, tornado, fireball, fury, tornado, tornado, fireball, tornado, raise_skeleton, fury, raise_skeleton, fury, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, fireball, fireball, tornado, tornado, raise_skeleton, raise_skeleton, fury, raise_skeleton, raise_skeleton, fury, raise_skeleton, fury, raise_skeleton, fury, fury, fury, raise_skeleton, raise_skeleton, fireball, tornado, fireball, fireball, fireball, fireball, fireball, fireball, tornado, fury, fury, fury, fury, fury\n\n### Barret\n- Ticks logged: 22086\n- Games (deploys): 294\n- Deaths: 3355\n- Recalls: 2210\n- Lane switches: 1587 (5.4/game)\n- Faction distribution: ranged:294\n- Pings: top:2044, bot:1763, mid:1309, recall:1203, base:835\n- Avg HP when alive: 87.9%\n- Level distribution: L13:29, L14:71, L15:31, L16:64, L17:73, L18:17, L19:9\n- Ability picks (in order): fury, critical_strike, fortitude, fury, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fury, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fury, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fury, fury, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fury, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude, fury, critical_strike, critical_strike, fortitude, critical_strike, fury, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fury, fury, critical_strike, critical_strike, fortitude, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fury, critical_strike, fortitude, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fury, critical_strike, fury, fury, fortitude, fortitude, fury, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fury, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, fortitude, critical_strike, fortitude, critical_strike, critical_strike, fortitude, fury, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fortitude, fury, critical_strike, fortitude, critical_strike, critical_strike, fury, critical_strike, fortitude, fortitude, fortitude, fury, fortitude, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fury, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, fury, fortitude, fortitude, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fury, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fury, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, fury, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fury, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, fury, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, fury, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fury, fury, critical_strike, fury, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, fury, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, critical_strike, fury, fortitude, fortitude, critical_strike, critical_strike, fury, fortitude, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fury, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, fury, fury, fortitude, fortitude, critical_strike, critical_strike, critical_strike, fortitude, fury, fury, critical_strike, fortitude, critical_strike, fortitude, fury, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fury, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fury, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fury, critical_strike, critical_strike, critical_strike, fortitude, fury, fortitude, critical_strike, fury, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fury, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fury, critical_strike, fortitude, critical_strike, critical_strike, fury, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fortitude, fury, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fury, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fury, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fury, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fortitude, critical_strike, fury, fury, fortitude, fortitude, critical_strike, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, critical_strike, fortitude, critical_strike, fury, critical_strike, fury, fury, critical_strike, fury, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fury, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fury, fortitude, critical_strike, fortitude, fury, critical_strike, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fury, fury, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, fury, fortitude, fortitude, critical_strike, fortitude, critical_strike, critical_strike, fortitude, fury, fury, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fortitude, fury, fortitude, fortitude, fortitude, fury, critical_strike, fortitude, fortitude, fury, critical_strike, fury, critical_strike, fortitude, fury, critical_strike, fury, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fury, critical_strike, fury, critical_strike, fortitude, critical_strike, fury, fortitude, fortitude, fortitude, fortitude, critical_strike, fury, critical_strike, critical_strike, fortitude, critical_strike, fury, critical_strike, critical_strike, fury, critical_strike, critical_strike, fortitude, fury, fortitude, fury, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fury, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fury, fortitude, critical_strike, critical_strike, fortitude, fury, critical_strike, fury, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fury, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, critical_strike, critical_strike, fury, fortitude, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fortitude, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fury, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, fortitude, critical_strike, fury, critical_strike, fury, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, fury, fury, critical_strike, fortitude, fortitude, fortitude, critical_strike, critical_strike, fury, critical_strike, critical_strike, fury, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fury, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fury, fortitude, critical_strike, fortitude, critical_strike, critical_strike, fury, critical_strike, fortitude, fortitude, fury, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fortitude, fortitude, critical_strike, fortitude, fury, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, fury, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, fury, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, critical_strike, fortitude, critical_strike, fury, fortitude, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fortitude, fortitude, critical_strike, fury, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, fury, critical_strike, fortitude, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fury, fury, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fury, fortitude, critical_strike, fury, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, fury, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fury, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, critical_strike, critical_strike, fury, fortitude, critical_strike, critical_strike, fortitude, fury, fortitude, critical_strike, critical_strike, fury, critical_strike, critical_strike, fortitude, fortitude, fury, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, fury, fortitude, critical_strike, fortitude, fortitude, fortitude, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, fortitude, fury, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, fortitude, fortitude, fury, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fury, fortitude, critical_strike, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fury, fortitude, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fury, fortitude, fortitude, fury, critical_strike, fortitude, critical_strike, fury, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fury, fury, critical_strike, fortitude, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, fury, critical_strike, fortitude, fortitude, critical_strike, fury, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, fortitude, fortitude, critical_strike, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, fortitude, fury, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fury, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, fury, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fury, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, fury, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, fortitude, fury, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fury, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fury, critical_strike, fury, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fury, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, fury, critical_strike, fury, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, critical_strike, fury, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, critical_strike, fury, fortitude, fortitude, critical_strike, fortitude, fury, fortitude, fury, fortitude, fortitude, critical_strike, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fury, critical_strike, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fury, fortitude, fortitude, critical_strike, fortitude, critical_strike, critical_strike, fortitude, fury, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fury, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, critical_strike, fury, fortitude, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, critical_strike, critical_strike, fortitude, fury, critical_strike, critical_strike, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, critical_strike, critical_strike, fortitude, fortitude, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fury, fury, fortitude, fury, critical_strike, critical_strike, fury, critical_strike, critical_strike, fury, fury, critical_strike, critical_strike, critical_strike, critical_strike, fury, fury, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fury, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, critical_strike, critical_strike, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude\n\n### Cloud\n- Ticks logged: 27294\n- Games (deploys): 283\n- Deaths: 4851\n- Recalls: 2222\n- Lane switches: 1321 (4.7/game)\n- Faction distribution: mage:283\n- Pings: mid:4044, bot:1536, top:1308, recall:1201, base:1046\n- Avg HP when alive: 87.5%\n- Level distribution: L11:23, L12:20, L13:13, L14:7, L15:22, L16:49, L17:24, L18:36, L19:17, L20:47, L21:9, L22:12, L23:4\n- Ability picks (in order): fortitude, fortitude, fortitude, tornado, tornado, tornado, fortitude, tornado, tornado, tornado, tornado, fireball, fortitude, fortitude, tornado, fortitude, fortitude, fortitude, tornado, tornado, tornado, tornado, fortitude, fireball, fortitude, tornado, tornado, fortitude, fortitude, tornado, fortitude, fortitude, tornado, fortitude, tornado, tornado, fireball, tornado, fortitude, fortitude, tornado, tornado, tornado, tornado, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, tornado, tornado, fortitude, tornado, tornado, tornado, fortitude, fireball, tornado, tornado, tornado, tornado, fortitude, tornado, tornado, fortitude, fortitude, tornado, fortitude, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, fireball, tornado, tornado, tornado, fireball, tornado, fireball, fortitude, tornado, tornado, fortitude, tornado, tornado, fortitude, fortitude, fortitude, fortitude, tornado, tornado, fireball, fireball, tornado, tornado, fireball, tornado, tornado, fortitude, fortitude, tornado, fortitude, tornado, tornado, tornado, fortitude, fortitude, fortitude, fireball, tornado, fortitude, tornado, fireball, fireball, fireball, fortitude, fortitude, tornado, tornado, tornado, fortitude, tornado, tornado, fireball, fortitude, tornado, fortitude, tornado, fortitude, fortitude, tornado, fireball, fireball, tornado, fireball, fortitude, tornado, tornado, tornado, tornado, tornado, tornado, fortitude, fortitude, tornado, tornado, tornado, fortitude, fireball, fortitude, tornado, tornado, tornado, fortitude, tornado, fortitude, fortitude, fortitude, tornado, tornado, tornado, tornado, tornado, tornado, fireball, tornado, fortitude, fireball, tornado, tornado, tornado, tornado, tornado, tornado, fortitude, tornado, fireball, fireball, tornado, fireball, fireball, fortitude, fireball, fortitude, fortitude, fortitude, fireball, fireball, fireball, fireball, fortitude, fortitude, tornado, tornado, tornado, fortitude, tornado, tornado, tornado, fireball, fortitude, fireball, tornado, fortitude, fireball, tornado, fireball, fortitude, tornado, fortitude, tornado, fireball, fortitude, tornado, fireball, fortitude, fortitude, fortitude, tornado, tornado, fireball, fireball, tornado, fortitude, fortitude, tornado, fireball, fortitude, fortitude, tornado, tornado, fireball, fireball, tornado, tornado, fireball, fortitude, tornado, tornado, fireball, tornado, fortitude, tornado, fortitude, tornado, tornado, fortitude, fireball, fireball, fortitude, tornado, tornado, fortitude, tornado, tornado, fireball, fortitude, fortitude, tornado, tornado, fireball, fortitude, tornado, fireball, tornado, fortitude, fortitude, tornado, fireball, fortitude, fortitude, fortitude, tornado, tornado, fireball, tornado, fortitude, fortitude, tornado, fireball, fortitude, fireball, tornado, tornado, tornado, tornado, fireball, tornado, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fireball, fortitude, fortitude, tornado, fortitude, fortitude, tornado, tornado, tornado, fortitude, fortitude, tornado, tornado, fireball, tornado, tornado, fortitude, fireball, fortitude, tornado, fireball, fortitude, tornado, tornado, tornado, fireball, fortitude, fortitude, tornado, tornado, tornado, fortitude, fireball, fireball, fortitude, tornado, tornado, fireball, fortitude, tornado, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, tornado, tornado, fireball, fortitude, fortitude, fortitude, fortitude, tornado, fireball, fireball, fortitude, tornado, tornado, fireball, tornado, fortitude, tornado, tornado, fortitude, fireball, fortitude, fortitude, fortitude, tornado, tornado, fortitude, tornado, fortitude, tornado, fireball, fortitude, tornado, tornado, fortitude, fortitude, fortitude, fortitude, tornado, tornado, fireball, tornado, tornado, tornado, tornado, fireball, tornado, fortitude, tornado, fortitude, fireball, fortitude, tornado, fortitude, fortitude, tornado, tornado, fortitude, fortitude, tornado, tornado, tornado, fortitude, tornado, fortitude, fortitude, fortitude, tornado, fortitude, fireball, fireball, fireball, fortitude, fortitude, fortitude, fortitude, tornado, fireball, fortitude, tornado, fortitude, fireball, tornado, fortitude, tornado, fortitude, tornado, tornado, fortitude, tornado, tornado, fortitude, fortitude, tornado, fortitude, tornado, fortitude, fortitude, tornado, fireball, tornado, tornado, fortitude, fortitude, tornado, fortitude, tornado, fortitude, fireball, tornado, fortitude, fireball, fireball, fortitude, fortitude, fortitude, fireball, fortitude, tornado, fortitude, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, tornado, tornado, tornado, fortitude, fireball, tornado, fortitude, tornado, fortitude, fortitude, fortitude, fireball, tornado, fortitude, fireball, tornado, tornado, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, tornado, tornado, fortitude, tornado, fortitude, fortitude, tornado, fortitude, tornado, fireball, fortitude, tornado, tornado, tornado, tornado, fireball, fortitude, fortitude, fireball, tornado, fortitude, tornado, fortitude, fireball, tornado, fortitude, tornado, fortitude, tornado, fireball, fortitude, tornado, fortitude, tornado, fortitude, fireball, fortitude, fireball, tornado, tornado, fireball, fortitude, tornado, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, tornado, fortitude, fortitude, fireball, tornado, fortitude, fireball, fortitude, fortitude, tornado, fireball, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, fireball, fortitude, fortitude, fireball, fireball, fireball, fortitude, tornado, tornado, fortitude, fortitude, fortitude, fortitude, tornado, tornado, tornado, fortitude, fortitude, fortitude, fortitude, tornado, tornado, fortitude, tornado, tornado, fortitude, fireball, fireball, fireball, fortitude, fortitude, fortitude, fortitude, tornado, fireball, tornado, tornado, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, fireball, tornado, fortitude, fortitude, fortitude, fortitude, fireball, fireball, fortitude, fireball, tornado, tornado, fortitude, fireball, tornado, fireball, fireball, fireball, fireball, fireball, fortitude, fortitude, fortitude, fireball, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, fireball, fireball, fortitude, tornado, tornado, fortitude, tornado, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fireball, fortitude, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fireball, fortitude, tornado, fortitude, tornado, fortitude, fortitude, tornado, fireball, fireball, fortitude, fireball, fireball, fortitude, fireball, fireball, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, fireball, fireball, fireball, fortitude, fireball, fireball, fortitude, fortitude, tornado, fortitude, fireball, tornado, tornado, fireball, fortitude, fortitude, fireball, fortitude, tornado, fortitude, tornado, fortitude, fortitude, fortitude, fortitude, fireball, tornado, fortitude, fireball, tornado, tornado, fireball, fireball, fireball, fireball, fortitude, fortitude, fortitude, tornado, fortitude, fireball, fortitude, tornado, tornado, fortitude, fireball, raise_skeleton, fireball, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, tornado, fireball, fortitude, fireball, fortitude, fortitude, fireball, tornado, fortitude, fortitude, fireball, fortitude, fortitude, raise_skeleton, tornado, raise_skeleton, fireball, fireball, fortitude, tornado, fortitude, fortitude, fireball, fortitude, fortitude, fortitude, fireball, fireball, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, tornado, fortitude, tornado, raise_skeleton, fortitude, fortitude, tornado, tornado, fortitude, fortitude, fortitude, fireball, tornado, fortitude, fireball, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, tornado, fireball, tornado, fortitude, fortitude, tornado, fireball, fortitude, fireball, fortitude, tornado, tornado, tornado, fortitude, fortitude, fireball, fireball, tornado, fortitude, fortitude, fireball, fireball, fireball, tornado, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, tornado, fireball, fireball, fireball, fortitude, tornado, fireball, fortitude, fortitude, tornado, fireball, fortitude, fireball, fireball, fortitude, tornado, fortitude, fireball, tornado, fortitude, fortitude, raise_skeleton, fireball, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, tornado, fireball, tornado, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fireball, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fortitude, fireball, fireball, fireball, tornado, fortitude, fortitude, fortitude, fireball, raise_skeleton, tornado, tornado, fortitude, fireball, fireball, fortitude, fireball, fortitude, fortitude, fortitude, fireball, fortitude, tornado, fortitude, fireball, fireball, tornado, fortitude, fortitude, tornado, fortitude, tornado, fortitude, fortitude, fortitude, fireball, tornado, fireball, fortitude, fortitude, fortitude, fireball, fortitude, fireball, raise_skeleton, fireball, fortitude, fireball, tornado, fortitude, fireball, fortitude, fortitude, fireball, fireball, raise_skeleton, tornado, fireball, tornado, fireball, fortitude, fireball, fireball, fortitude, fireball, fireball, fortitude, fortitude, tornado, raise_skeleton, fireball, fireball, fortitude, fireball, fireball, tornado, fireball, fireball, fortitude, fireball, fireball, fireball, fireball, tornado, tornado, fortitude, fireball, fireball, fireball, fireball, fortitude, fortitude, fireball, fireball, fortitude, fireball, fireball, fireball, fortitude, fortitude, fireball, fireball, fortitude, fireball, fortitude, fortitude, raise_skeleton, fireball, tornado, fireball, fortitude, tornado, tornado, fireball, fortitude, fireball, fireball, fireball, fireball, fortitude, fortitude, tornado, fortitude, fortitude, raise_skeleton, fireball, fireball, fireball, fortitude, fortitude, tornado, fortitude, tornado, tornado, fireball, fortitude, fireball, fireball, fireball, fortitude, fortitude, fireball, tornado, fireball, fireball, fireball, fireball, fireball, fortitude, fireball, fireball, fortitude, fireball, fortitude, fireball, fortitude, fireball, fireball, fireball, fireball, fireball, fireball, fireball, tornado, fortitude, fireball, fireball, fortitude, fireball, tornado, tornado, fortitude, fireball, fireball, fortitude, tornado, fireball, fireball, fireball, raise_skeleton, fireball, fireball, fireball, fireball, tornado, fireball, tornado, fireball, tornado, fireball, raise_skeleton, fireball, fireball, raise_skeleton, fireball, fireball, fireball, fireball, tornado, fireball, fireball, fortitude, fireball, tornado, fortitude, fortitude, tornado, fireball, fireball, tornado, fireball, fortitude, fortitude, fortitude, fireball, tornado, fortitude, tornado, tornado, tornado, fireball, fortitude, fireball, tornado, tornado, fireball, fireball, fortitude, fireball, fireball, fortitude, fortitude, tornado, fortitude, tornado, fireball, fortitude, fireball, fortitude, tornado, fireball, tornado, fortitude, tornado, tornado, tornado, fireball, fireball, fireball, fortitude, fortitude, tornado, fireball, fireball, tornado, fireball, fortitude, fireball, tornado, fortitude, fortitude, fireball, tornado, fireball, fireball, fortitude, fireball, fortitude, fireball, tornado, tornado, raise_skeleton, fireball, fortitude, fortitude, fortitude, fortitude, fireball, tornado, fireball, fireball, fireball, fireball, fireball, fireball, fireball, tornado, raise_skeleton, fortitude, tornado, fortitude, fireball, tornado, fortitude, fortitude, fireball, fireball, fireball, fortitude, fireball, fireball, fireball, fireball, fortitude, fortitude, fortitude, fireball, fortitude, fireball, fireball, fireball, fireball, fortitude, fireball, fireball, fireball, fireball, fortitude, fireball, fireball, fireball, fireball, tornado, fireball, fireball, fireball, fireball, fireball, fireball, tornado, fireball, fireball, fireball, tornado, fireball, fortitude, fireball, tornado, tornado, fortitude, fortitude, fireball, fireball, fireball, fireball, fireball, raise_skeleton, fortitude, fortitude, tornado, fireball, fireball, tornado, fireball, fireball, tornado, fireball, tornado, fireball, tornado, fortitude, fireball, fireball, fireball, tornado, fireball, tornado, fireball, tornado, fireball, tornado, fireball, tornado, fortitude, tornado, fireball, tornado, fireball, fireball, fireball, fireball, tornado, tornado, fireball, fireball, fireball, tornado, raise_skeleton, tornado, fireball, fireball, tornado, fireball, tornado, tornado, tornado, tornado, fireball, tornado, fireball, tornado, tornado, tornado, tornado, raise_skeleton, fireball, fireball, fireball, fireball, tornado, fireball, fortitude, fireball, fireball, fireball, fireball, fireball, fireball, tornado, fireball, raise_skeleton, tornado, raise_skeleton, fireball, fireball, tornado, fireball, fireball, fireball, tornado, raise_skeleton, raise_skeleton, tornado, fireball, fireball, tornado, tornado, fireball, tornado, fireball, fireball, raise_skeleton, raise_skeleton, raise_skeleton, tornado, fireball, tornado, fireball, fireball, tornado, fireball, fireball, tornado, fireball, tornado, raise_skeleton, tornado, fireball, fireball, fireball, raise_skeleton, fireball, fireball, fireball, raise_skeleton, raise_skeleton, fireball, fireball, fireball, fireball, tornado, tornado, fireball, fireball, tornado, tornado, fireball, fireball, tornado, tornado, tornado, fireball, tornado, raise_skeleton, fireball, tornado, tornado, tornado, raise_skeleton, tornado, fireball, fireball, fireball, fireball, fireball, tornado, raise_skeleton, tornado, fireball, tornado, tornado, fireball, fireball, fireball, raise_skeleton, tornado, fireball, fireball, fireball, tornado, tornado, fireball, fireball, tornado, fireball, fireball, fireball, tornado, tornado, raise_skeleton, fireball, raise_skeleton, tornado, fireball, tornado, fireball, fireball, raise_skeleton, fireball, fireball, fireball, tornado, fireball, fireball, fireball, tornado, fireball, fireball, fireball, tornado, tornado, fireball, tornado, raise_skeleton, fireball, fireball, tornado, tornado, fireball, raise_skeleton, fireball, fireball, tornado, tornado, fireball, raise_skeleton, tornado, fireball, fireball, fireball, fireball, raise_skeleton, tornado, fireball, raise_skeleton, tornado, fireball, fireball, tornado, raise_skeleton, tornado, fireball, raise_skeleton, fireball, fireball, fireball, fireball, fireball, tornado, fireball, fireball, fireball, tornado, fireball, fireball, tornado, fireball, fireball, raise_skeleton, fireball, fireball, tornado, tornado, tornado, fireball, tornado, fireball, fireball, fireball, raise_skeleton, fireball, fireball, tornado, fireball, raise_skeleton, tornado, raise_skeleton, fireball, fireball, fireball, fireball, tornado, tornado, fireball, fireball, fireball, tornado, fireball, fireball, fireball, fireball, tornado, tornado, fireball, tornado, tornado, tornado, raise_skeleton, fireball, fireball, tornado, tornado, raise_skeleton, tornado, raise_skeleton, tornado, fireball, raise_skeleton, tornado, fireball, tornado, fireball, fireball, tornado, fireball, tornado, tornado, tornado, fireball, raise_skeleton, fireball, tornado, fireball, fireball, tornado, fireball, fireball, raise_skeleton, fireball, fireball, tornado, tornado, fireball, fireball, fireball, tornado, fireball, tornado, tornado, tornado, fireball, tornado, fireball, tornado, fireball, tornado, tornado, tornado, raise_skeleton, tornado, fireball, tornado, fireball, tornado, tornado, tornado, tornado, fireball, raise_skeleton, tornado, fireball, raise_skeleton, tornado, fireball, raise_skeleton, tornado, tornado, fireball, fireball, tornado, fireball, tornado, raise_skeleton, fireball, tornado, raise_skeleton, tornado, tornado, tornado, fireball, fireball, tornado, fireball, raise_skeleton, tornado, fireball, raise_skeleton, tornado, fireball, fireball, fireball, tornado, tornado, tornado, fireball, fireball, fireball, raise_skeleton, tornado, fireball, fireball, tornado, raise_skeleton, tornado, fireball, raise_skeleton, tornado, fireball, fireball, raise_skeleton, fireball, tornado, fireball, tornado, fireball, fireball, fireball, tornado, tornado, tornado, fireball, fireball, tornado, raise_skeleton, fireball, fireball, tornado, tornado, raise_skeleton, tornado, tornado, fireball, raise_skeleton, fireball, fireball, tornado, raise_skeleton, fireball, tornado, tornado, tornado, fury, raise_skeleton, fireball, tornado, fireball, tornado, tornado, fireball, fireball, fireball, tornado, tornado, raise_skeleton, fireball, tornado, tornado, tornado, tornado, fireball, fireball, tornado, fireball, raise_skeleton, tornado, tornado, fireball, tornado, tornado, fireball, fireball, tornado, fireball, raise_skeleton, fireball, fireball, raise_skeleton, fireball, tornado, fireball, fireball, raise_skeleton, tornado, tornado, raise_skeleton, raise_skeleton, tornado, raise_skeleton, tornado, tornado, raise_skeleton, tornado, tornado, fireball, tornado, fireball, fireball, tornado, tornado, raise_skeleton, tornado, tornado, fireball, tornado, raise_skeleton, fireball, raise_skeleton, tornado, tornado, fireball, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, fury, raise_skeleton, tornado, tornado, fireball, raise_skeleton, tornado, tornado, tornado, fortitude, raise_skeleton, tornado, tornado, raise_skeleton, fortitude, fireball, tornado, raise_skeleton, raise_skeleton, fireball, fireball, tornado, tornado, raise_skeleton, tornado, raise_skeleton, fireball, tornado, tornado, raise_skeleton, tornado, tornado, fireball, tornado, tornado, tornado, tornado, fireball, raise_skeleton, raise_skeleton, tornado, raise_skeleton, tornado, raise_skeleton, tornado, tornado, tornado, raise_skeleton, tornado, fireball, tornado, fireball, fury, tornado, fireball, fireball, tornado, fireball, fury, tornado, fireball, raise_skeleton, tornado, tornado, raise_skeleton, tornado, raise_skeleton, raise_skeleton, tornado, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, tornado, tornado, raise_skeleton, raise_skeleton, raise_skeleton, tornado, tornado, raise_skeleton, raise_skeleton, raise_skeleton, tornado, raise_skeleton, tornado, tornado, tornado, tornado, raise_skeleton, fireball, raise_skeleton, tornado, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, tornado, raise_skeleton, raise_skeleton, fireball, raise_skeleton, tornado, tornado, tornado, raise_skeleton, raise_skeleton, tornado, tornado, tornado, fury, fireball, tornado, tornado, raise_skeleton, fireball, tornado, raise_skeleton, fireball, tornado, raise_skeleton, raise_skeleton, tornado, tornado, tornado, raise_skeleton, raise_skeleton, fireball, raise_skeleton, tornado, tornado, tornado, tornado, raise_skeleton, tornado, tornado, tornado, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, tornado, tornado, raise_skeleton, fireball, tornado, raise_skeleton, raise_skeleton, tornado, raise_skeleton, raise_skeleton, tornado, tornado, raise_skeleton, fireball, raise_skeleton, tornado, tornado, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, tornado, raise_skeleton, tornado, raise_skeleton, raise_skeleton, tornado, raise_skeleton, tornado, fireball, raise_skeleton, tornado, raise_skeleton, fireball, tornado, tornado, raise_skeleton, raise_skeleton, raise_skeleton, fury, tornado, tornado, raise_skeleton, raise_skeleton, raise_skeleton, tornado, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, fury, tornado, tornado, tornado, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, fireball, raise_skeleton, tornado, raise_skeleton, raise_skeleton, raise_skeleton, tornado, fury, raise_skeleton, tornado, raise_skeleton, raise_skeleton, fireball, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, fury, raise_skeleton, fury, tornado, raise_skeleton, fury, tornado, raise_skeleton, fury, raise_skeleton, raise_skeleton, raise_skeleton, fireball, raise_skeleton, raise_skeleton, raise_skeleton, fury, raise_skeleton, raise_skeleton, fireball, raise_skeleton, fury, raise_skeleton, raise_skeleton, fireball, fireball, fury, raise_skeleton, raise_skeleton, fireball, fireball, raise_skeleton, fury, raise_skeleton, raise_skeleton, fireball, raise_skeleton, fireball, raise_skeleton, fireball, fireball, raise_skeleton, raise_skeleton, fireball, raise_skeleton, fireball, raise_skeleton, fireball, fireball, fireball, raise_skeleton, raise_skeleton, fireball, raise_skeleton, fury, fireball, raise_skeleton, fury, fireball, fury, fireball, fireball, fireball, fireball, raise_skeleton, fireball, fireball, fireball, fireball, raise_skeleton, raise_skeleton, fury, fireball, fireball, fireball, raise_skeleton, fortitude, fortitude, fortitude, raise_skeleton, raise_skeleton, fury\n\n### Sephiroth\n- Ticks logged: 24635\n- Games (deploys): 287\n- Deaths: 3775\n- Recalls: 2294\n- Lane switches: 1007 (3.5/game)\n- Faction distribution: mage:287\n- Pings: bot:3375, recall:1315, mid:1260, top:929, base:929\n- Avg HP when alive: 88.8%\n- Level distribution: L14:12, L15:42, L16:30, L17:60, L18:49, L19:37, L20:38, L21:18, L22:1\n- Ability picks (in order): fortitude, fireball, tornado, fortitude, tornado, tornado, tornado, fortitude, tornado, fortitude, tornado, fortitude, fortitude, tornado, tornado, fortitude, tornado, tornado, tornado, fortitude, tornado, tornado, fortitude, fortitude, tornado, fortitude, fortitude, fortitude, fortitude, tornado, fireball, tornado, tornado, tornado, fortitude, tornado, fortitude, fortitude, fortitude, tornado, tornado, tornado, fortitude, tornado, tornado, tornado, tornado, tornado, fortitude, tornado, tornado, fortitude, tornado, tornado, fortitude, tornado, fortitude, fortitude, fortitude, fortitude, tornado, tornado, fireball, tornado, tornado, fortitude, fortitude, fortitude, fortitude, tornado, tornado, tornado, fortitude, fortitude, tornado, fortitude, tornado, tornado, fireball, tornado, fortitude, tornado, tornado, fireball, tornado, fortitude, tornado, fireball, fortitude, tornado, tornado, fortitude, tornado, tornado, fireball, fireball, tornado, fortitude, tornado, tornado, fireball, fireball, fortitude, fortitude, tornado, tornado, fortitude, tornado, fireball, tornado, fireball, tornado, fortitude, fireball, tornado, tornado, tornado, tornado, tornado, fortitude, fortitude, tornado, tornado, tornado, fortitude, fortitude, tornado, tornado, fireball, tornado, tornado, fortitude, tornado, tornado, tornado, fortitude, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, tornado, tornado, tornado, tornado, tornado, tornado, tornado, fortitude, fortitude, tornado, tornado, tornado, tornado, tornado, tornado, tornado, fireball, tornado, fortitude, fortitude, tornado, tornado, fireball, fortitude, tornado, tornado, tornado, tornado, fortitude, tornado, tornado, fortitude, fortitude, tornado, tornado, tornado, tornado, tornado, tornado, tornado, tornado, fortitude, fortitude, fortitude, fortitude, fireball, tornado, fortitude, fortitude, tornado, fireball, fortitude, tornado, fireball, fortitude, fireball, tornado, tornado, tornado, fortitude, fortitude, fortitude, fireball, fortitude, tornado, fortitude, tornado, tornado, tornado, tornado, fortitude, tornado, fortitude, fortitude, tornado, fortitude, tornado, fortitude, fortitude, tornado, fortitude, fireball, tornado, fortitude, tornado, tornado, tornado, tornado, fortitude, tornado, tornado, fireball, tornado, tornado, fortitude, fortitude, tornado, tornado, tornado, tornado, tornado, tornado, fortitude, tornado, tornado, fortitude, tornado, fortitude, fortitude, tornado, tornado, tornado, fortitude, fireball, fortitude, fireball, tornado, tornado, fortitude, tornado, fortitude, tornado, tornado, tornado, tornado, fortitude, tornado, tornado, tornado, fireball, fireball, tornado, tornado, fortitude, tornado, tornado, tornado, fireball, tornado, tornado, fortitude, fortitude, fortitude, tornado, fortitude, tornado, tornado, tornado, fortitude, fortitude, tornado, tornado, tornado, fortitude, fortitude, tornado, fireball, fortitude, tornado, tornado, tornado, fortitude, fireball, tornado, tornado, tornado, fortitude, tornado, fortitude, tornado, tornado, fireball, tornado, fortitude, tornado, tornado, tornado, fortitude, tornado, fortitude, fortitude, tornado, fireball, fortitude, tornado, fortitude, tornado, fortitude, fortitude, fortitude, tornado, tornado, fireball, tornado, tornado, tornado, tornado, fireball, fortitude, tornado, fortitude, tornado, tornado, fortitude, fortitude, tornado, fireball, tornado, fireball, fireball, fireball, fireball, fortitude, tornado, fortitude, fortitude, fortitude, tornado, tornado, tornado, fireball, fortitude, fortitude, tornado, fortitude, fortitude, tornado, fortitude, tornado, fortitude, tornado, fireball, fortitude, tornado, tornado, tornado, tornado, fortitude, fireball, tornado, fireball, fireball, fireball, fortitude, tornado, fortitude, fireball, fireball, tornado, fortitude, fortitude, tornado, fireball, fortitude, fortitude, fortitude, tornado, tornado, tornado, tornado, fortitude, tornado, fortitude, fortitude, fireball, fireball, fireball, fireball, tornado, fireball, fortitude, fortitude, fortitude, tornado, fireball, fortitude, tornado, fortitude, tornado, fireball, fireball, fireball, fortitude, fortitude, tornado, fireball, fortitude, tornado, fortitude, tornado, fortitude, fireball, fortitude, fortitude, tornado, fireball, fortitude, fireball, fireball, fireball, fireball, tornado, fortitude, fortitude, fortitude, fireball, tornado, fortitude, fireball, fireball, fortitude, tornado, tornado, fireball, tornado, tornado, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, tornado, fireball, fireball, fireball, fortitude, fireball, fireball, fireball, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fireball, tornado, fireball, fortitude, fireball, fireball, tornado, tornado, fortitude, fireball, fortitude, fortitude, fireball, fortitude, tornado, fortitude, tornado, fireball, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, fireball, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fireball, fireball, fireball, tornado, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, fireball, fortitude, fortitude, fireball, fortitude, fortitude, tornado, fortitude, tornado, fireball, fortitude, fortitude, fortitude, fireball, fireball, tornado, fortitude, fortitude, fortitude, fireball, fortitude, tornado, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, tornado, tornado, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, fortitude, fireball, tornado, tornado, tornado, tornado, tornado, tornado, fireball, fireball, fortitude, tornado, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, tornado, fortitude, fortitude, tornado, fortitude, fortitude, tornado, fortitude, tornado, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, tornado, fireball, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, tornado, fireball, fireball, fireball, fortitude, fortitude, fortitude, fireball, tornado, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fortitude, fortitude, fireball, fireball, fortitude, fortitude, tornado, fortitude, fireball, fireball, tornado, fortitude, fireball, tornado, tornado, fortitude, fireball, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, tornado, fortitude, tornado, fortitude, fireball, fortitude, fortitude, tornado, tornado, fireball, fortitude, fireball, fortitude, fireball, fireball, fortitude, fortitude, fortitude, tornado, fireball, fireball, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fireball, fortitude, fireball, fortitude, fortitude, fireball, tornado, fortitude, fireball, tornado, tornado, fireball, fireball, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fortitude, fortitude, fireball, fireball, tornado, fortitude, tornado, fortitude, fortitude, fireball, fortitude, fireball, tornado, tornado, raise_skeleton, fortitude, fortitude, fortitude, fireball, fortitude, fireball, fireball, fortitude, fireball, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, tornado, tornado, fortitude, fireball, raise_skeleton, fireball, fireball, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, fireball, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, fortitude, tornado, fortitude, fortitude, tornado, fortitude, fireball, fireball, fireball, fireball, fortitude, fireball, tornado, fortitude, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fortitude, fireball, fireball, fortitude, fireball, fortitude, fortitude, tornado, tornado, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fortitude, tornado, tornado, fireball, fortitude, fortitude, fireball, fireball, tornado, fortitude, tornado, fortitude, fireball, fortitude, fireball, fireball, fortitude, tornado, tornado, fortitude, fortitude, fortitude, fireball, fortitude, fireball, tornado, fortitude, fireball, fortitude, tornado, fortitude, fortitude, fireball, fireball, tornado, fortitude, fireball, fortitude, fortitude, tornado, tornado, fortitude, fireball, fortitude, fortitude, fortitude, fireball, fireball, fortitude, tornado, fireball, fortitude, tornado, fireball, tornado, fortitude, fortitude, tornado, fortitude, tornado, fireball, fireball, fireball, fortitude, fireball, tornado, fortitude, fireball, fireball, fortitude, fireball, fortitude, tornado, fortitude, fireball, tornado, fireball, fortitude, fortitude, fireball, fortitude, fireball, fortitude, fireball, fortitude, tornado, tornado, tornado, fireball, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, tornado, fortitude, raise_skeleton, fireball, fortitude, fireball, tornado, fireball, fireball, fireball, fortitude, tornado, tornado, fortitude, fortitude, fortitude, fortitude, fortitude, fireball, fortitude, fortitude, raise_skeleton, fireball, fortitude, fortitude, fireball, fireball, tornado, fireball, fortitude, fortitude, fortitude, raise_skeleton, tornado, fireball, fortitude, fireball, fortitude, fortitude, fireball, fireball, fireball, fireball, fireball, fortitude, fireball, raise_skeleton, fireball, fortitude, raise_skeleton, fireball, raise_skeleton, fireball, tornado, fortitude, fireball, fortitude, tornado, fortitude, fortitude, fireball, fortitude, fortitude, fireball, fireball, raise_skeleton, fireball, tornado, tornado, tornado, raise_skeleton, tornado, tornado, fireball, fireball, fortitude, fireball, fireball, fireball, fortitude, fireball, tornado, fireball, fireball, raise_skeleton, fireball, fireball, raise_skeleton, fortitude, fireball, fireball, fireball, fireball, tornado, fortitude, fireball, tornado, fireball, fireball, tornado, fortitude, tornado, fortitude, raise_skeleton, fireball, tornado, fortitude, fireball, fireball, tornado, fireball, fireball, fortitude, fortitude, tornado, tornado, raise_skeleton, raise_skeleton, tornado, fireball, tornado, fireball, fireball, fireball, tornado, tornado, raise_skeleton, fortitude, fireball, fireball, raise_skeleton, fireball, tornado, fireball, fireball, fireball, fireball, fireball, raise_skeleton, fireball, raise_skeleton, fortitude, fireball, fortitude, fireball, fireball, fireball, fireball, fireball, fireball, tornado, fireball, fireball, fireball, fortitude, fortitude, fireball, raise_skeleton, fortitude, fireball, tornado, fireball, tornado, fortitude, fireball, fireball, tornado, raise_skeleton, fireball, fireball, tornado, fireball, fireball, raise_skeleton, fireball, fireball, fireball, fortitude, tornado, fortitude, fireball, fireball, tornado, tornado, fireball, fireball, fireball, tornado, raise_skeleton, fireball, tornado, fireball, fortitude, fireball, fireball, fireball, fortitude, fireball, fortitude, fortitude, fireball, fireball, tornado, tornado, fireball, fireball, fireball, fireball, tornado, fortitude, tornado, fireball, fireball, tornado, fireball, fireball, fireball, tornado, fireball, fireball, raise_skeleton, tornado, tornado, raise_skeleton, fireball, raise_skeleton, fortitude, fireball, fireball, fireball, fireball, fireball, tornado, fireball, fireball, tornado, fireball, fireball, tornado, tornado, fortitude, fireball, raise_skeleton, fireball, tornado, fireball, fortitude, raise_skeleton, fortitude, fortitude, fireball, tornado, tornado, tornado, tornado, fireball, fireball, fireball, fireball, fortitude, fireball, raise_skeleton, tornado, fireball, raise_skeleton, tornado, fireball, fortitude, tornado, fireball, fireball, fireball, raise_skeleton, fireball, raise_skeleton, fireball, fireball, raise_skeleton, tornado, fireball, fireball, tornado, tornado, tornado, fireball, tornado, fireball, tornado, fireball, raise_skeleton, tornado, fireball, tornado, tornado, fireball, tornado, fireball, fireball, raise_skeleton, tornado, fireball, tornado, tornado, tornado, tornado, tornado, fireball, tornado, fireball, fireball, fireball, fireball, fireball, fireball, fireball, tornado, fireball, tornado, tornado, tornado, tornado, fireball, fireball, fortitude, fireball, fireball, tornado, fireball, tornado, fireball, tornado, tornado, fireball, tornado, fireball, fireball, fortitude, tornado, tornado, fireball, tornado, fireball, tornado, fireball, fireball, tornado, fireball, tornado, fireball, fireball, tornado, tornado, fireball, tornado, fireball, tornado, fireball, fireball, fireball, fireball, tornado, fireball, tornado, fireball, tornado, fireball, tornado, fireball, tornado, fireball, raise_skeleton, fireball, tornado, fortitude, fireball, raise_skeleton, fireball, fireball, tornado, fireball, fireball, fortitude, fireball, raise_skeleton, fireball, fireball, fireball, fireball, fireball, fireball, fireball, tornado, raise_skeleton, tornado, raise_skeleton, fireball, tornado, fireball, fireball, fireball, fireball, fireball, tornado, raise_skeleton, tornado, tornado, tornado, tornado, fireball, fireball, fireball, tornado, raise_skeleton, tornado, fireball, fireball, tornado, tornado, fireball, raise_skeleton, fireball, tornado, raise_skeleton, raise_skeleton, fireball, fireball, fireball, tornado, raise_skeleton, fireball, fireball, tornado, tornado, tornado, fireball, tornado, fireball, fireball, fireball, raise_skeleton, tornado, tornado, fireball, fireball, tornado, fireball, tornado, tornado, tornado, fireball, raise_skeleton, fireball, tornado, tornado, tornado, fireball, fireball, tornado, tornado, fireball, tornado, tornado, tornado, fireball, fireball, tornado, tornado, fireball, fireball, raise_skeleton, fireball, fireball, fireball, tornado, fireball, fireball, fireball, tornado, raise_skeleton, raise_skeleton, raise_skeleton, fireball, fireball, fireball, tornado, fireball, fireball, raise_skeleton, raise_skeleton, tornado, tornado, tornado, raise_skeleton, fireball, fireball, tornado, fireball, tornado, tornado, fireball, tornado, fireball, tornado, raise_skeleton, tornado, fireball, fireball, tornado, tornado, raise_skeleton, fireball, tornado, tornado, tornado, tornado, raise_skeleton, raise_skeleton, tornado, raise_skeleton, tornado, raise_skeleton, tornado, tornado, fireball, fireball, fireball, fireball, tornado, fireball, raise_skeleton, raise_skeleton, tornado, tornado, tornado, tornado, raise_skeleton, raise_skeleton, tornado, tornado, fireball, fireball, fireball, tornado, fireball, tornado, tornado, tornado, tornado, tornado, tornado, fireball, tornado, tornado, fireball, tornado, tornado, fireball, fireball, fireball, fireball, raise_skeleton, fireball, tornado, raise_skeleton, tornado, tornado, fireball, fireball, raise_skeleton, tornado, tornado, tornado, tornado, raise_skeleton, fireball, tornado, tornado, raise_skeleton, tornado, raise_skeleton, tornado, tornado, tornado, tornado, fireball, tornado, fireball, tornado, tornado, fireball, tornado, tornado, fireball, raise_skeleton, tornado, tornado, fireball, raise_skeleton, raise_skeleton, tornado, tornado, tornado, fireball, raise_skeleton, raise_skeleton, tornado, raise_skeleton, fireball, raise_skeleton, tornado, tornado, tornado, tornado, tornado, tornado, raise_skeleton, tornado, tornado, raise_skeleton, tornado, tornado, tornado, fireball, tornado, tornado, fireball, fireball, tornado, tornado, tornado, tornado, fireball, tornado, fireball, tornado, raise_skeleton, fireball, tornado, fireball, raise_skeleton, tornado, tornado, fireball, tornado, raise_skeleton, raise_skeleton, tornado, tornado, tornado, tornado, raise_skeleton, fireball, fireball, raise_skeleton, tornado, tornado, tornado, raise_skeleton, tornado, fireball, raise_skeleton, tornado, tornado, tornado, raise_skeleton, tornado, tornado, tornado, fireball, tornado, tornado, fireball, fireball, fireball, tornado, raise_skeleton, fireball, fireball, tornado, tornado, raise_skeleton, fireball, tornado, tornado, tornado, fireball, fireball, tornado, tornado, tornado, tornado, tornado, tornado, raise_skeleton, fireball, fireball, fireball, raise_skeleton, tornado, fireball, fireball, tornado, tornado, raise_skeleton, tornado, raise_skeleton, tornado, tornado, tornado, raise_skeleton, raise_skeleton, tornado, tornado, raise_skeleton, raise_skeleton, tornado, fireball, tornado, tornado, raise_skeleton, raise_skeleton, tornado, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, tornado, raise_skeleton, tornado, raise_skeleton, raise_skeleton, fireball, raise_skeleton, raise_skeleton, raise_skeleton, tornado, tornado, raise_skeleton, raise_skeleton, fireball, raise_skeleton, raise_skeleton, tornado, raise_skeleton, raise_skeleton, tornado, raise_skeleton, tornado, fireball, raise_skeleton, fireball, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, fireball, raise_skeleton, tornado, tornado, raise_skeleton, fireball, tornado, fireball, raise_skeleton, tornado, fireball, tornado, tornado, tornado, fireball, fireball, tornado, fireball, fireball, tornado, tornado, fireball, tornado, fireball, tornado, fireball, raise_skeleton, fireball, tornado, tornado, tornado, raise_skeleton, fireball, fireball, raise_skeleton, raise_skeleton, tornado, fireball, raise_skeleton, raise_skeleton, raise_skeleton, raise_skeleton, tornado, raise_skeleton, fireball, tornado, fireball, fireball, fireball, raise_skeleton, tornado, raise_skeleton, raise_skeleton, tornado, tornado, raise_skeleton, tornado, tornado, raise_skeleton, fireball, fireball, tornado, raise_skeleton, fireball, fireball, fireball, tornado, tornado, raise_skeleton, fireball, raise_skeleton, tornado, tornado, raise_skeleton, tornado, raise_skeleton, tornado, raise_skeleton, raise_skeleton, tornado, tornado, raise_skeleton, raise_skeleton, tornado, raise_skeleton, raise_skeleton, fireball, raise_skeleton, raise_skeleton, raise_skeleton, tornado, fireball, fireball, tornado, raise_skeleton, tornado, tornado, tornado, tornado, fireball, tornado, raise_skeleton, tornado, tornado, tornado, raise_skeleton, tornado, tornado, fireball, tornado, raise_skeleton, tornado, fireball, tornado, tornado, raise_skeleton, tornado, tornado, raise_skeleton, raise_skeleton, fury, tornado, fury, tornado, raise_skeleton, raise_skeleton, tornado, raise_skeleton, fireball, fireball, tornado, fireball, raise_skeleton, raise_skeleton, fireball, raise_skeleton, raise_skeleton, raise_skeleton, fireball, fireball, raise_skeleton, tornado, fireball, tornado, fireball, raise_skeleton, fury, raise_skeleton, fury, raise_skeleton, raise_skeleton, raise_skeleton, fury, fury, fury, fury, fireball, fireball, tornado, tornado, tornado, fury, fury, fury\n\n## Fleet-Wide\n\n- Lane stacking incidents (3+ bots same lane same tick): 2219\n- Faction co-occurrence across games:\n  - mage + ranged: 852 games\n  - mage + mage: 847 games\n\n## Decision Reasoning Summary\n\nTop 10 most common reasoning strings (fleet-wide):\n  - `dead_waiting_respawn`: 24432\n  - `enemy_territory_recall`: 6380\n  - `respawn_rotation`: 3951\n  - `low_hp_recall`: 2764\n  - `emergency_defend`: 2315\n  - `hold_bot:best_score_5`: 2241\n  - `hold_mid:best_score_3`: 2226\n  - `hold_mid:best_score_-2`: 1996\n  - `hold_bot:best_score_-5`: 1926",
+  "build_meta": {
+    "1": "Baseline (pre-session)",
+    "2": "Volley early, bloodlust fix, top-lane penalty",
+    "3": "HOME_LANE_BONUS\u219214, push mode lvl13+, Barret\u2192mid",
+    "4": "Barret\u2192bot, push mode disabled for Barret",
+    "5": "Barret laneSwitchPenalty\u219235",
+    "6": "$DOTA tokens + Tifa deployed (farcaster skin \u2014 broken)",
+    "7": "Ring of Regen all bots [stats skewed]",
+    "8": "Cloud Ring of Regen confirmed. All 5 regen.",
+    "9": "Tifa skin=pixagreen_mage (correct). Heal ability active.",
+    "10": "Cloud\u2192top. Tifa+Aerith own mid. Burst parallel deploy.",
+    "11": "RedXIII deployed (melee/top, cleave+divine_shield).",
+    "12": "Full 6-bot fleet. Cloud\u2192bot. Lane split confirmed.",
+    "13": "Barret retired (316 games, 41% WR). 5-bot fleet.",
+    "14": "Cloud laneSwitchPenalty\u219240. RedXIII\u219235. DANGER_RECALL 0.65\u21920.55."
+  }
 }
